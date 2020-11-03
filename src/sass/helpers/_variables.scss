@@ -1,0 +1,81 @@
+//*** --- Paths --- *** //
+$imgPath: '../img';
+$fontPath: '../fonts';
+
+//*** --- Colors --- *** //
+
+// site colors
+$white: #fff;
+$black: #000;
+$black-light: #373435;
+$gray: #808080;
+$gray-dark: #666;
+$gray-light: #ccc;
+$gray-bright: #e6e6e6;
+$yellow: #ffd00a;
+$brown: #d2ae6d;
+$green: #4ea47d;
+$red: #e00;
+$blue: #0102b4;
+$gold: #d2ae6d;
+
+// gradient colors
+$gradient-light: $white;
+$gradient-dark: #111;
+
+// colors map
+$text-color: $black-light;
+
+//*** --- Typography --- *** //
+
+// basic typography
+$arial: Arial, Helvetica, sans-serif;
+$font-family: $arial;
+$font-size: 14px;
+$line-height: 1;
+
+//*** --- Layout --- *** //
+
+// breakpoints
+$screen-xs: 374px;
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-lg: 992px;
+$screen-xl: 1199px;
+$screen-xxl: 1399px;
+
+// widths
+$width-default: 1358px;
+
+// left/right paddings for site
+$padding-small: 20px;  // left/right paddings for width < 768px (mobile)
+$padding-middle: 50px; // left/right paddings for width from 767px to 1199px (most tablets)
+$padding-big: 60px;    // left/right paddings for width > 1199px
+
+// header height
+$header-height: 126px;
+$header-height-tablet: 110px;
+$header-height-mob: 86px;
+
+
+//*** --- Transitions --- *** //
+
+/* default for most elements */
+$transition: .3s ease;
+$transition-expand-time: .8s;
+$transition-time-popup: .3s;
+
+// transition for mobile navigation
+$transition-nav: .5s ease-out;
+
+//*** --- Form settings --- *** //
+$form-field-background: $white;
+$form-error-border: $red;
+$form-error-text: $red;
+$form-border-color: $gray-dark;
+$form-border-color-hover: $black;
+$form-border-color-focus: $black;
+$form-border-radius: 0;
+$form-disabled-text: #eee;
+$form-height: 47px;
+$form-padding-x: 13px;

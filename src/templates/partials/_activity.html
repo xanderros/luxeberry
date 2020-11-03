@@ -1,0 +1,42 @@
+{% macro activity(title, type, good, img, desc, link, target, mapLocation, mapLink) %}
+<div class="activities__item js-filter__item" data-options="{{ type + ', ' + good }}">
+  <div class="activity{% if mapLocation %} map{% endif %}">
+    <div class="activity__side">
+      {% if link %}<a href="{{ link }}"{% if target %} target="_blank"{% endif %} class="activity__pic">{% endif %}
+      <img class="activity__img lazyload" data-src="{{ img }}.jpg" data-srcset="/img/{{ img }}.jpg" alt="Fathom Five National Marine Park">
+      {% if link %}</a>{% endif %}
+      {% if mapLocation %}
+      <div class="activity__map map__content">
+        <iframe class="map__frame map__frame_location" src="" data-src="{{ mapLink }}" width="391" height="262" frameborder="0" allowfullscreen=""></iframe>
+        <a href="#" class="map__close">
+          <svg class="map__close-icon" width="26" height="26">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+          </svg>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="activity__content">
+      <h3 class="activity__title">{{ title }}</h3>
+      {% if mapLocation %}
+      <div class="activity__location">
+        <a href="#" class="activity__link map__btn map__btn_location">
+          <svg class="activity__icon" width="14" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-map-marker"></use></svg>
+          <span class="activity__link-text">{{ mapLocation }}</span>
+        </a>
+      </div>
+      {% endif %}
+      <div class="activity__info">
+        <div class="activity__spec"><span>TYPE:</span> {{ type }}</div>
+        <div class="activity__spec"><span>GOOD FOR:</span> {{ good }}</div>
+      </div>
+      <div class="activity__desc">{{ desc|safe }}</div>
+      {% if link %}
+      <div class="activity__row">
+        <a href="{{ link }}"{% if target %} target="_blank"{% endif %} class="link">More information on {{ title }}</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endmacro %}

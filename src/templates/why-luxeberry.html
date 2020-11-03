@@ -1,0 +1,106 @@
+---
+title: Why Us | Luxeberry Group
+theme: light
+canonical: https://luxeberry.ca/why-luxeberry
+description: Submit your property and join Luxeberry's collection of Canada's best vacation homes.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_no-gradient">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-why-us_1_mob.jpg, /img/cover-why-us_1_mob@2x.jpg 2x" media="(max-width: 767px)">
+    <img class="cover__img" src="/img/cover-why-us_1.jpg" srcset="/img/cover-why-us_1@2x.jpg 2x" alt="Submit Your Property">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading">Why stay at a Luxeberry managed property?</h1>
+      <div class="cover__desc">
+        <p>
+          More than a mere real estate rental service, Luxeberry gives guests a
+          home away from home.
+        </p>
+        <p class="hide-mob">
+          Our carefully curated selection of handpicked properties, our extensive
+          network of trusted hospitality suppliers, and our dedication to customer
+          satisfaction makes Luxeberry a cut above the rest.
+        </p>
+        <p class="hide-mob">
+          Don’t gamble your next vacation on the algorithms of a saturated
+          booking site; secure your preferred property through Luxeberry and
+          treat yourself to the luxury vacation of your dreams.
+        </p>
+      </div>
+      <div class="cover__button">
+        <a href="/vacation/rentals" class="btn btn_dark btn_size_sm">Explore Luxeberry Properties</a>
+      </div>
+    </section>
+  </div>
+  <a href="#content" class="cover__down js-anchor">
+    <svg class="cover__arrow" width="60" height="54">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-arrow"></use>
+    </svg>
+  </a>
+</div>
+
+<div class="box" id="content">
+
+  <div class="units mb-big">
+    {% set why = [{
+    "side" : "right",
+    "pic"  : "big",
+    "img"  : "why-us-passion",
+    "title": "Our Passion",
+    "desc" : "
+    <p>
+      Unlike other short-term vacation rental platforms on the market,
+      Luxeberry doesn’t accept just any old vacation home or cottage.
+      Our professional in-house team handpick all our properties to
+      ensure we only work with the best. Every Luxeberry home must
+      pass a rigorous 100-point inspection that factors in form, function,
+      and feel.
+    </p>
+    "
+    },{
+    "side" : "left",
+    "pic"  : "big",
+    "img"  : "why-us-extras",
+    "title": "Our Added Little Extras",
+    "desc" : "
+    <p>
+      It’s the small things in life that make us happy. And that’s
+      why Luxeberry is all about those added little extras which
+      make our customers smile. Whether it’s a bottle of bubbly
+      in the fridge, a box of chocolates on the table, or a super
+      fluffy bathrobe that feels straight out of a five-star hotel,
+      Luxeberry slips delightful little addons into every home.
+    </p>
+    "
+    },{
+    "side" : "right",
+    "pic"  : "big",
+    "img"  : "why-us-knowledge",
+    "title": "Our Knowledge and Networks",
+    "desc" : "
+    <p>
+      With years of experience in the real estate and hospitality game,
+      Luxeberry knows how to run a tight ship—our bathrooms are forever
+      squeaky clean, and our home appliances are always in perfect working
+      order. And should an issue arise during your stay, our 24/7 customer
+      service team will arrange one of our contractors to sort it out on the
+      double.
+    </p>
+    "
+    }] %}
+
+    {% for item in why %}
+    {{ unit(item.side, item.img, item.title, item.desc, item.pic) }}
+    {% endfor %}
+  </div>
+
+  {% include "partials/_featured-vacation-rentals.html" %}
+</div>
+
+{% endblock %}

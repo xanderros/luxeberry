@@ -1,0 +1,85 @@
+//**** Basic styles
+// Make viewport responsive
+@at-root {
+	@-ms-viewport {
+		width: device-width;
+	}
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+[tabindex='-1']:focus {
+	outline: none !important;
+}
+
+// iOS 'clickable elements' fix for role='button'
+[role='button'] {
+	cursor: pointer;
+}
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+a,
+button,
+[role='button'],
+input,
+label,
+select,
+textarea {
+	touch-action: manipulation;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	appearance: none;
+}
+
+a {
+	cursor: pointer;
+}
+strong, b {
+	font-weight: bold;
+}
+
+// Avoid border in links on focus
+a:active,
+a:focus {
+	outline: none;
+}
+::-moz-focus-outer,
+::-moz-focus-inner {
+	border: 0;
+}
+input:invalid {
+	box-shadow: none;
+}
+
+
+// Main styles
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: 1;
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: none;
+}

@@ -1,0 +1,301 @@
+---
+title: Top Things to Do in Tobermory | Local Attractions | Luxeberry Group
+theme: light
+canonical: https://luxeberry.ca/tobermory/attractions/things-to-do
+description: Crystal clear waters, centuries-old shipwrecks, hiking the forested Bruce Trail, exploring the cragged Grotto cave, and Flowerpot Island makes Tobermory one of the top tourist and freshwater SCUBA destinations on earth. 
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_height_small">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-attractions_1-main_mob.jpg, /img/cover-attractions_1-main_mob@2x.jpg 2x" media="(max-width: 480px)">
+    <img class="cover__img" src="/img/cover-attractions_1-main.jpg" srcset="/img/cover-attractions_1-main@2x.jpg 2x" alt="Tobermory Ontario">
+  </picture>
+</div>
+
+<div class="box">
+
+  <section class="mb">
+    <h1 class="title">Exploring Tobermory and the Northern Bruce Peninsula</h1>
+    <div class="content">
+      <p>
+        Tucked away on the northern tip of the Bruce Peninsula, Tobermory is a quaint Canadian town home to under 4,000 permanent inhabitants. 
+      </p>
+      <p>
+        Yet the pretty harbourfront village is far from sleepy; its crystal clear waters and centuries-old shipwrecks make Tobermory one of the top freshwater SCUBA destinations on earth. There’s plenty on offer for landlubbers as well, from hiking the forested Bruce Trail to exploring the cragged Grotto cave and Flowerpot Island. 
+      </p>
+      <p>
+        There truly is something for everyone around Tobermory. Let’s take a gander at the top things to do in Tobermory and the Northern Bruce Peninsula.  
+      </p>
+    </div>
+  </section>
+
+  <section class="mb-big">
+    <div class="caption filter filter_check">
+      <h2 class="title">Top things to do in Tobermory</h2>
+      <div class="caption__side">
+        <div class="filter__container">
+          <div class="filter__result">
+            <span class="filter__result-value">21</span> results
+          </div>
+          <div class="filter__box">
+            <a href="#" class="filter__btn">Filter</a>
+            <div class="filter__dropdown">
+              <a href="#" class="filter__close">
+                <svg class="filter__close-icon" width="15" height="15">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+              <div class="filter__caption">Filter results</div>
+              <div class="filter__group">
+                <div class="filter__title">Type</div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-nature" value="NATURE & PARKS">
+                    <label class="checkbox__label" for="checkbox-nature">Nature & Parks</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-outdoor" value="OUTDOOR ACTIVITIES">
+                    <label class="checkbox__label" for="checkbox-outdoor">Outdoor activities</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-sightseeing" value="SIGHTSEEING">
+                    <label class="checkbox__label" for="checkbox-sightseeing">Sightseeing</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-food" value="FOOD & DRINK">
+                    <label class="checkbox__label" for="checkbox-food">Food & Drink</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-winter" value="WINTER ACTIVITIES">
+                    <label class="checkbox__label" for="checkbox-winter">Winter activities</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__group">
+                <div class="filter__title">Good for</div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-kids" value="KIDS">
+                    <label class="checkbox__label" for="checkbox-kids">Kids</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-families" value="FAMILIES">
+                    <label class="checkbox__label" for="checkbox-families">Families</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-couples" value="COUPLES">
+                    <label class="checkbox__label" for="checkbox-couples">Couples</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__bottom">
+                <a href="#" class="filter__submit btn btn_light btn_size_filter">Apply filter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activities js-filter js-filter_check">
+      {% set activities = [{
+      "title"      : "Fathom Five National Marine Park",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-fathom-five",
+      "desc"       : "The Fathom Five National Marine Park protects the shimmering Georgian Bay, whose touristic treasures include ancient shipwrecks, lonely lighthouses, and a thriving freshwater ecosystem. Hiking, sailing, diving, and glass-bottom boat rides are available in this exciting section of Lake Huron. ",
+      "link"       : "/tobermory/attractions/fathom-five-national-marine-park",
+      "mapLocation": "121 Chi sin tib dek Rd, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.536807435762!2d-81.6584680841477!3d45.25715847909903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0bacbcf25a49%3A0x810c2069e1474294!2s121%20Chi%20sin%20tib%20dek%20Rd%2C%20Tobermory%2C%20ON%20N0H%202R0%2C%20Canada!5e0!3m2!1sen!2sca!4v1581698576478!5m2!1sen!2sca"
+      },{
+      "title"      : "Bruce Peninsula National Park",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-bruce-peninsula-national-park",
+      "desc"       : "Framed by rugged coastlines and packed with lush forest terrain, the Bruce Peninsula National Park is a playground for avid outdoor enthusiasts. Tranquil hiking trails wind through the park, and its picture-perfect lakes are perfect for pitching a tent. ",
+      "link"       : "/tobermory/attractions/bruce-peninsula-national-park",
+      "mapLocation": "469 Cyprus Lake Rd, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.084839027608!2d-81.5267785841486!3d45.22585147909893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0619e7a94d7d%3A0x49e2e60e6390bb9e!2s469%20Cyprus%20Lake%20Rd%2C%20Tobermory%2C%20ON%20N0H%202R0%2C%20Canada!5e0!3m2!1sen!2sca!4v1581698670279!5m2!1sen!2sca"
+      },{
+      "title"      : "Flowerpot Island",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-flowerpot-lsland",
+      "desc"       : "As the star attraction of the Fathom Five, Flowerpot Island juts out of the glistening Georgian Bay. A well-maintained circular hiking route takes in the most scenic views, including the jagged ‘flowerpot’ rock formations that rise vertically from the lake.",
+      "link"       : "/tobermory/attractions/flowerpot-island",
+      "mapLocation": "Flowerpot Island, Northern Bruce Peninsula, ON",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11225.518940859392!2d-81.63461615565703!3d45.30075431558827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2da0a2601d447f%3A0xb0bbca9874162864!2sFlowerpot%20Island!5e0!3m2!1sen!2sca!4v1581698720551!5m2!1sen!2sca"
+      },{
+      "title"      : "Little Cove Provincial Park",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-little-cove",
+      "desc"       : "West of Bruce Peninsula National Park lies this smaller provincial park, home to the rocky Little Cove Beach. The sheltered cove is a top spot for kayaking, and there’s a scenic hiking trail leading to the Bruce Peninsula campgrounds.",
+      "link"       : "https://www.ontarioparks.com/park/littlecove",
+      "mapLocation": "Little Cove Rd, Northern Bruce Peninsula, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.4212665259747!2d-81.62468278414825!3d45.23927347909909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0961e873b38d%3A0xc8052c133fa66014!2sLittle%20Cove%20Rd%2C%20Tobermory%2C%20ON%20N0H%202R0%2C%20Canada!5e0!3m2!1sen!2sca!4v1581698754577!5m2!1sen!2sca"
+      },{
+      "title"      : "Big Tub Harbour",
+      "type"       : "OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-big-tub-harbour",
+      "desc"       : "The long and skinny Big Tub Harbour lies just outside of Tobermory and is a hit with visitors for its crystal clear waters, lush tree-lined shores, and the spooky Sweepstakes–a 19th-century shipwreck visible from the surface.",
+      "link"       : "https://explorethebruce.com/profile/big-tub-harbour/2268/",
+      "mapLocation": "Big Tub Harbour, Tobermory, ON",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11234.288193159477!2d-81.68556725567696!3d45.25644596558324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0b1cf141a26f%3A0x2d1b2dcdc3636473!2sBig%20Tub%20Harbour!5e0!3m2!1sen!2sca!4v1581698790838!5m2!1sen!2sca"
+      },{
+      "title"      : "Little Tub Harbour",
+      "type"       : "FOOD & DRINK, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-little-tub",
+      "desc"       : "Smack bang in the center of Tobermory lies Little Hub Harbour, the town’s primary port and mariner. A whole host of culinary venues and pubs line its shores, including the unmissable Tobermory Brewing Company & Grill.",
+      "link"       : "https://tobermory.com/do-see/sightseeing/little-tub-harbour",
+      "mapLocation": "Little Tub Harbour, Tobermory, ON",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11234.302308921991!2d-81.671233555677!3d45.256374615583226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0baa8652ebf3%3A0x5526590d34ea523b!2sLittle%20Tub%20Harbour!5e0!3m2!1sen!2sca!4v1581698830257!5m2!1sen!2sca"
+      },{
+      "title"      : "Mermaid Cove",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-mermaid-cove",
+      "desc"       : "A 20-minute hike east of Tobermory will see you arrive at the quaint Mermaid Cove. You won’t find any mythical sea creatures here, but rather clear and calm waters to swim and snorkel to your heart’s content. ",
+      "mapLocation": "End of, Grant Watson Dr, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.1400298560416!2d-81.64237418414751!3d45.265180079099004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0a5028af1387%3A0x54046abd581e4133!2sAncient%20Coast%20Bed%20%26%20Breakfast!5e0!3m2!1sen!2sca!4v1581698862673!5m2!1sen!2sca"
+      },{
+      "title"      : "Singing Sands Beach",
+      "type"       : "BEACH, OUTDOOR ACTIVITIES",
+      "good"       : "KIDS, FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-singing-sands",
+      "desc"       : "Located on the southern shores of the Bruce Peninsula, Singing Sands Beach is your best bet for a tranquil beach escape. Shallow waters make it ideal for the little ones and several dog-friendly trails crisscross around the area.",
+      "link"       : "https://explorethebruce.com/profile/singing-sands-beach-trails/1618/",
+      "mapLocation": "Dorcas Bay, Tobermory, ON",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.5593342730763!2d-81.57446868415056!3d45.155522279098506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0f9203c8d92b%3A0xbd6f2f49717a4d4d!2sDorcas%20Bay%20Rd%2C%20Northern%20Bruce%20Peninsula%2C%20ON%20N0H%202R0%2C%20Canada!5e0!3m2!1sen!2sca!4v1581698899469!5m2!1sen!2sca"
+      },{
+      "title"      : "The Grotto",
+      "type"       : "NATURE & PARKS, SIGHTSEEING, OUTDOOR ACTIVITIES",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-the-grotto",
+      "desc"       : "A highlight of the Bruce Peninsula National Park, the Grotto is a gorgeous limestone cave lapped by clear turquoise waves. Visit on a boat trip from Tobermory or hike here through the pine forests of the Bruce Trail.",
+      "link"       : "/tobermory/attractions/the-grotto",
+      "mapLocation": "Bruce Trail, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15892.263975018855!2d-81.53114757413667!3d45.24006951591053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d062bec46ad1b%3A0xec9dc7da5d7ccc24!2sThe%20Grotto%2C%20Bruce%20Peninsula%20National%20Park!5e0!3m2!1sen!2sca!4v1586183536386!5m2!1sen!2sca"
+      },{
+      "title"      : "Big Tub Lighthouse",
+      "type"       : "SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-big-tub-lighthouse",
+      "desc"       : "Perched on the tip of a peninsula and marking the entrance of Big Tub Harbor, this 14-metre whitewashed lighthouse can be spotted from miles away. Visits inside the 19th-century structure aren’t permitted, although it’s worth visiting all the same. ",
+      "link"       : "http://www.brucecoastlighthouses.com/lighthouses/big-tub-lighthouse/",
+      "mapLocation": "Big Tub Harbour, Tobermory, ON",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11234.288193159477!2d-81.68556725567696!3d45.25644596558324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0b1cf141a26f%3A0x2d1b2dcdc3636473!2sBig%20Tub%20Harbour!5e0!3m2!1sen!2sca!4v1581698790838!5m2!1sen!2sca"
+      },{
+      "title"      : "Little Cove Adventures - Aerial Park",
+      "type"       : "OUTDOOR ACTIVITIES",
+      "good"       : "KIDS, FAMILIES",
+      "img"        : "activity-tobermory_13",
+      "desc"       : "Located on Highway 6 just three minutes from Tobermory, this sky-high rope course is a blast for the kids and the young at heart. A selection of cute and clean cabins are available should you fancy staying the night. ",
+      "link"       : "http://www.littlecove.ca/",
+      "mapLocation": "7111 ON-6, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.715794675184!2d-81.6376365841484!3d45.233316479098924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0be60161db6f%3A0x3b6f924dc64de67f!2s7111%20ON-6%2C%20Tobermory%2C%20ON%20N0H%202R0%2C%20Canada!5e0!3m2!1sen!2sca!4v1581699106565!5m2!1sen!2sca"
+      },{
+      "title"      : "Scuba Diving and Snorkeling",
+      "type"       : "OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-scuba-diving",
+      "desc"       : "Boasting crystal clear water and almost two dozen shipwrecks to explore, the Fathom Five National Marine Park serves up the best underwater adventures in Canada. Its near-perfect visibility and dazzling limestone shoals make it well worth braving the frigid water.",
+      "link"       : "/tobermory/attractions/scuba-diving"
+      },{
+      "title"      : "Kayaking or Canoeing",
+      "type"       : "OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-canoeing",
+      "desc"       : "Experience the unbridled beauty of the Fathom Five without getting your feet wet by renting a kayak or canoe. The Bruce Peninsula coastline is awash with cute little coves and caves to explore, suitable for paddlers of all levels. "
+      },{
+      "title"      : "Day Trips and Tours",
+      "type"       : "SIGHTSEEING TOURS",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-tour",
+      "desc"       : "From glass-bottom boat trips to SCUBA tours and sailing excursions further afield, there’s no shortage of exciting day trips to choose from in Tobermory. The agencies around Little Hub Harbour will be more than willing to organise an epic mini-escape. ",
+      "link"       : "https://explorethebruce.com/things-to-do/daytrips-tours/"
+      },{
+      "title"      : "Dinner Cruise",
+      "type"       : "FOOD & DRINK, SIGHTSEEING TOURS",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-dinner-cruise",
+      "desc"       : "Hop aboard the MS Chi-Cheemaun cruise ship and enjoy a delicious Canadian feast as the sun sets over the Georgian Bay. What better way to top off a perfect day in paradise than wining and dining under the stars?",
+      "link"       : "http://www.ontarioferries.com/en/sunset-dinner-cruise/",
+      "mapLocation": "8 Eliza St, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.5377719097764!2d-81.66630268414771!3d45.25713897909912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0b0069a34bad%3A0x2cbef08b1a58773d!2s8%20Eliza%20St%2C%20Tobermory%2C%20ON%20N0H%202R0%2C%20Canada!5e0!3m2!1sen!2sca!4v1581699153448!5m2!1sen!2sca"
+      },{
+      "title"      : "Breathtaking Sunsets",
+      "type"       : "SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-sunset",
+      "desc"       : "Sunsets over the Georgian Bay showcase a dazzling display of contrasts and colour. The mesmerizing light show steps up a notch in summer and is best viewed aboard a vessel or the west-facing Shoal Bight Bay."
+      },{
+      "title"      : "Stargazing",
+      "type"       : "SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-stargazing",
+      "desc"       : "A low level of light pollution makes Tobermory an excellent spot to gaze up at the heavens in awe. Head to the harbour at Lion’s Head on Friday or Saturday nights in summer for the free Bayside Astronomy Program. "
+      },{
+      "title"      : "Hiking Trails",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, WINTER ACTIVITIES",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-hiking",
+      "desc"       : "Lushly forested trails abound throughout the Bruce Peninsula, from 20-minute island loops to grueling multiday treks. The Bruce Peninsula National Park boasts the best hiking spots as well as plenty of pretty lakeside locales to pitch a tent. ",
+      "link"       : "https://tobermory.com/do-see/outdoors-adventures/hiking-trails"
+      },{
+      "title"      : "Helicopter Tours",
+      "type"       : "SIGHTSEEING TOURS",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-helicopter-tours",
+      "desc"       : "Grab a bird’s eye view of Tobermory’s divine natural splendor in a thrilling helicopter ride around the region. Itineraries range from 12 minutes to an hour and offer a whole new perspective on the lake, peninsula, and islands. ",
+      "link"       : "http://www.blueherontours.ca/",
+      "mapLocation": "Blue Heron Tours - 7433 ON-6, Tobermory, ON N0H 2R0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.71384973803!2d-81.6674093841478!3d45.25357887909909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0b0748241ee5%3A0xdc4adbabb1da989d!2sBlue%20Heron%20Tours-%20Helicopter%20Tours!5e0!3m2!1sen!2sca!4v1581699194864!5m2!1sen!2sca"
+      },{
+      "title"      : "Snowmobiling",
+      "type"       : "WINTER ACTIVITIES",
+      "good"       : "KIDS, FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-snowmobiling",
+      "desc"       : "Escape the winter chill by embarking on an adrenaline-pumping snowmobile excursion through the peninsula’s fens, bogs, and beaver ponds. You’ll blast over ridges and tear through cedar forests on this thrilling Skidoo adventure. "
+      },{
+      "title"      : "Snowshoeing and Cross Country Skiing",
+      "type"       : "WINTER ACTIVITIES",
+      "good"       : "KIDS, FAMILIES, COUPLES",
+      "img"        : "activity-tobermory-sm-skiing",
+      "desc"       : "To explore the snowscape at a slower pace, opt for a snowshoe or cross country skiing expedition. Flat gentle terrain and gorgeous evergreen pines mean the Bruce Peninsula has some of the finest cross country trails in Canada. "
+      }] %}
+
+      {% for item in activities %}
+      {{ activity(item.title, item.type, item.good, item.img, item.desc, item.link, item.target, item.mapLocation, item.mapLink) }}
+      {% endfor %}
+      <p class="activities__not-found js-filter__reset">
+      <span class="activities__not-found-text content">
+        No results were found for the selected options.
+      </span>
+        <a href="#" class="link">Reset filter and show all Top things to do in Tobermory</a>
+      </p>
+    </div>
+  </section>
+
+  {% include "partials/_places-stay-tobermory.html" %}
+
+</div>
+
+{% endblock %}

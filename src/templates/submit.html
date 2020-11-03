@@ -1,0 +1,205 @@
+---
+title: Submit Vacation Home | Luxeberry Group
+theme: light
+canonical: https://luxeberry.ca/submit
+description: Our carefully curated selection of handpicked properties, our extensive network of trusted hospitality suppliers, and our dedication to customer satisfaction makes Luxeberry a cut above the rest.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_form cover_no-gradient">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-submit_3b-mob.jpg, /img/cover-submit_3b-mob@2x.jpg 2x" media="(max-width: 576px)">
+    <img class="cover__img cover__img_align_bottom" src="/img/cover-submit_3.jpg" srcset="/img/cover-submit_3@2x.jpg 2x" alt="Join Luxeberry's collection of Canada's best vacation homes">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading cover__heading_small" id="form-property">Join Luxeberry's collection of Canada's best vacation homes</h1>
+      <div class="cover__desc">
+        <p>
+          If you think your home is worthy, apply to become part of the Luxeberry collection.
+        </p>
+      </div>
+      <!-- submit property form -->
+      <form class="cover__form form" id="form-submit-property">
+        <div class="form__container">
+          <div class="form__row">
+            <div class="form__control">
+              <input class="form__input" type="text" name="name" placeholder="Full Name*" required>
+            </div>
+          </div>
+          <div class="form__row form__grid form__grid_2">
+            <div class="form__cell">
+              <div class="form__control">
+                <input class="form__input" type="email" name="email" placeholder="Email*" required>
+              </div>
+            </div>
+            <div class="form__cell">
+              <div class="form__control">
+                <input class="form__input" type="tel" name="phone" placeholder="Phone*" required>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__control">
+              <textarea rows="6" class="form__textarea" name="message" placeholder="Please provide details about your property including address and if you are currently renting as a short-term rental and links to your Airbnb account."></textarea>
+            </div>
+          </div>
+          <div class="form__btn">
+            <button class="btn btn_flat" type="submit">Send Message</button>
+          </div>
+        </div>
+        <div class="form__success">
+          <div class="form__success-box">
+            <!-- success message -->
+            <div class="form__success-title">Thank you for getting in touch!</div>
+            <p>
+              We appreciate you contacting us.<br>
+              One of our colleagues will get back in touch with you soon!
+            </p>
+            <p>
+              Have a great day!
+            </p>
+            <!-- success message (end) -->
+          </div>
+        </div>
+      </form>
+      <!-- submit property form (end) -->
+    </section>
+  </div>
+</div>
+
+<div class="box">
+  <h2 class="title">Are you a property owner looking to list your property with Luxeberry?</h2>
+  <div class="content mb">
+    <p>
+      Please text or call 905-531-8227 or email <a href="mailto:management@luxeberry.ca">management@luxeberry.ca</a> for our property management team.
+    </p>
+  </div>
+
+  <section>
+    <h2 class="title title_mb">The onboarding process</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step__side">
+          <img class="step__img lazyload" data-src="/img/submit.png" data-srcset="/img/submit@2x.png 2x" alt="">
+        </div>
+        <div class="step__content">
+          <h3 class="step__title">Step 1: Submitting your property</h3>
+          <div class="step__text">
+            Simply <a class="js-anchor" href="#form-property">fill out this form</a> to express your interest in joining our exclusive list of handpicked vacation homes. If your property complies
+            with our stringent requirements for form, function, and feel, we’ll arrange a meeting with one of our short-term rental property
+            experts to find out if we’re a mutual fit.
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__side">
+          <img class="step__img lazyload" data-src="/img/discuss.png" data-srcset="/img/discuss@2x.png 2x" alt="">
+        </div>
+        <div class="step__content">
+          <h3 class="step__title">Step 2: Discussing the details</h3>
+          <div class="step__text">
+            At the initial meeting, our rental gurus will evaluate your property and provide a detailed revenue estimation. In many situations,
+            these seasoned veterans can even suggest improvements to your décor and amenities to attract a more favourable nightly rate.
+            We discuss your special requirements and schedule to streamline the process.
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__side">
+          <img class="step__img lazyload" data-src="/img/create.png" data-srcset="/img/create@2x.png 2x" alt="">
+        </div>
+        <div class="step__content">
+          <h3 class="step__title">Step 3: Creating the perfect listing</h3>
+          <div class="step__text">
+            One of our professional real estate photographers will personally visit your home to capture it at its best. Our copywriters will cook
+            up a catchy name, develop a persuasive description, and list your neatly packaged property on the top platforms like Airbnb,
+            Booking.com, luxeberry.ca, and HomeAway.
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__side">
+          <img class="step__img lazyload" data-src="/img/receive.png" data-srcset="/img/receive@2x.png 2x" alt="">
+        </div>
+        <div class="step__content">
+          <h3 class="step__title">Step 4: Receiving your first guest</h3>
+          <div class="step__text">
+            Once we’ve updated your property with crisp white linen and premium bathroom amenities, you’re now ready to say hello to your
+            very first guest. But don’t worry; you won’t have to lift a finger. Luxeberry will take care of the check-ins, guest communication on
+            your behalf.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="hr hr_mobile-small"></div>
+  <section class="mb-big">
+    <h2 class="title">Luxeberry requirements</h2>
+    <div class="content mb">
+      <p>
+        Every property is handpicked for its expertly designed space, character and comfort to enhance guest satisfaction and optimize sales. Each Luxeberry
+        property must provide a high-end holiday experience and pass a comprehensive 200+ point inspection with a focus on <strong>form, function, and feel</strong>.
+      </p>
+    </div>
+    <div class="grid grid_req">
+      <div class="grid__cell">
+        <div class="req">
+          <div class="req__top">
+            <img class="req__img lazyload" data-src="/img/form.png" data-srcset="/img/form@2x.png 2x" alt="">
+          </div>
+          <div class="req__content">
+            <strong>FORM</strong> refers to a home’s layout and design.
+            Luxeberry properties must have plenty of
+            space to comfortably accommodate every
+            guest, with sufficient seating in both the
+            dining room and the lounge. Patios must
+            feature ample outdoor furnishings and
+            nowhere in the home can feel even the
+            slightest bit cramped.
+          </div>
+        </div>
+      </div>
+      <div class="grid__cell">
+        <div class="req">
+          <div class="req__top">
+            <img class="req__img lazyload" data-src="/img/function.png" data-srcset="/img/function@2x.png 2x" alt="">
+          </div>
+          <div class="req__content">
+            <strong>FUNCTION</strong> refers to the quality and efficient
+            operation of all individual components.
+            Luxeberry only accepts homes where
+            kitchens come with chef-quality appliances
+            and the HVAC units are effective yet utterly
+            silent. We require at least one bathroom for
+            every two bedrooms and insist on the latest
+            home entertainment tech.
+          </div>
+        </div>
+      </div>
+      <div class="grid__cell">
+        <div class="req">
+          <div class="req__top">
+            <img class="req__img lazyload" data-src="/img/feel.png" data-srcset="/img/feel@2x.png 2x" alt="">
+          </div>
+          <div class="req__content">
+            <strong>FEEL</strong> refers to the emotions your property
+            evokes among guests. We assess the
+            architecture of your home and evaluate the
+            gardens and landscaping outside. Décor,
+            furnishings, and fixtures should work together
+            in unison to elicit a million-dollar vibe. Our
+            favourite properties boast unique features
+            and exude a sense of exclusivity.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,118 @@
+---
+title: About Us | Luxeberry Group
+theme: light
+canonical: https://luxeberry.ca/about
+description: Our extensive industry expertise, passion for short term rentals, and favourable contracts with local suppliers let property owners maximize returns.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_no-gradient">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-about-us_1_mob.jpg, /img/cover-about-us_1_mob@2x.jpg 2x" media="(max-width: 767px)">
+    <img class="cover__img cover__img_align_bottom" src="/img/cover-about-us_2.jpg" srcset="/img/cover-about-us_2@2x.jpg 2x" alt="Champions of inspired luxury vacation rentals">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side cover__side_about">
+      <h1 class="cover__heading">Champions of inspired luxury vacation rentals</h1>
+      <div class="cover__desc">
+        <p class="hide-mob">
+         Industry research and his own travel experience led Luxeberry’s founder, Max Sheppard, to make two stark conclusions: demand outstrips supply for high-end quality short-term vacation rentals and existing online platforms fail to capitalize on this lucrative market in Canada.
+        </p>
+        <p>
+          <span class="hide-mob">Thus the </span>Luxeberry Group was born with the mission to pair the best vacation rentals
+          with low-risk guests that appreciate the finer details.
+        </p>
+      </div>
+    </section>
+  </div>
+  <a href="#content" class="cover__down js-anchor">
+    <svg class="cover__arrow" width="60" height="54">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-arrow"></use>
+    </svg>
+  </a>
+</div>
+
+<div class="box" id="content">
+  <h2 class="title">A Passion for Real Estate</h2>
+  <div class="content mb">
+    <p>
+      From starting a thriving retail business while in high school to over a decade operating a prominent digital marketing and development firm to creating, expanding, and selling
+      a widely successful home improvement website, Max has over three decades of experience in the business world.
+    </p>
+    <p>
+      Throughout his career, Max has always kept a keen eye on the real estate sector, purchasing and managing conventional investment properties. At the same time, his curiosity
+      for the short-term rental space evolved into an obsession. After selling his business, Max focused his energy on developing tools to help ensure complete guest satisfaction
+      while increasing returns for property owners.
+    </p>
+    <p>
+      But to acquire enough real-world experience to manage short term vacation rentals on behalf of other property owners, Max knew he had the give the business a go firsthand. Upon purchasing and renovating investment properties in Grand Bend and Tobermory, Max achieved perfect five-star ratings from all guests, even the most discerning ones, while generated higher returns compared to most conventional rental properties.
+    </p>
+  </div>
+
+  <div class="units mb-big">
+    {% set about = [{
+    "side" : "right",
+    "pic"  : "middle",
+    "img"  : "about_us_profiting",
+    "title": "Profiting Through Short Term Rentals",
+    "desc" : "
+    <p>
+      Maximizing positive feedback, minimizing potential issues, and
+      cultivating positive relationships with suppliers allowed Luxeberry’s first
+      properties to evolve into profitable investments. And now, Luxeberry
+      seeks to share its expertise to allow the homeowner to enjoy similar
+      success in the lucrative short-term rental industry.
+    </p>
+    "
+    },{
+    "side" : "left",
+    "pic"  : "middle",
+    "img"  : "about_us_hard_yards",
+    "title": "We’ve Done the Hard Yards for You",
+    "desc" : "
+    <p>
+      Luxeberry has developed strategic alliances with the top interior designers,
+      cleaning suppliers, and home maintenance professionals to ensure top-tier
+      management and growth for your investment.
+    </p>
+    <p>
+      We’ve partnered with specialist short-term rental insurance providers
+      and developed in-depth screening procedures to weed out troublesome
+      guests. Our custom-built proprietary pricing system determines optimal
+      nightly rates to maximize your monthly earnings.
+    </p>
+    "
+    },{
+    "side" : "right",
+    "pic"  : "middle",
+    "img"  : "property_management_technology",
+    "title": "A True Turn-Key Solution",
+    "desc" : "
+    <p>
+      With Luxeberry, all the hallmarks for a low-risk five-star rental property
+      are already in place.
+    </p>
+    <p>
+      Our extensive industry expertise, passion for short term rentals, and
+      favourable contracts with local suppliers let you maximize the return on
+      your investment with minimal fuss.
+    </p>
+    <p>
+      Luxeberry’s ultimate goal is to help property owners turn a tidy profit
+      from their investment without having to become experts in the field.
+    </p>
+    "
+    }] %}
+
+    {% for item in about %}
+    {{ unit(item.side, item.img, item.title, item.desc, item.pic) }}
+    {% endfor %}
+  </div>
+
+  {% include "partials/_featured-vacation-rentals.html" %}
+</div>
+
+{% endblock %}

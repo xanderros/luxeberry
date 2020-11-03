@@ -1,0 +1,8 @@
+{% macro rentalSlide(img,title) %}
+<div class="swiper-slide">
+  <picture class="offer__pic">
+    <source data-srcset="/img/{{ img }}_mob.jpg, /img/{{ img }}_mob@2x.jpg 2x" media="(max-width: 480px)">
+    <img class="offer__img lazyload" data-src="/img/{{ img }}.jpg" data-srcset="/img/{{ img }}@2x.jpg 2x" alt="{{ title }}">
+  </picture>
+</div>
+{% endmacro %}

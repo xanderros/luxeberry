@@ -1,0 +1,11 @@
+{% macro gallerySlide(img,alt,desc) %}
+<div class="swiper-slide">
+  <div class="gallery__item">
+    <picture class="gallery__pic">
+      <source data-srcset="/img/{{ img }}_mob.jpg, /img/{{ img }}_mob@2x.jpg 2x" media="(max-width: 480px)">
+      <img class="gallery__img lazyload" data-src="/img/{{ img }}.jpg" data-srcset="/img/{{ img }}@2x.jpg 2x" alt="{{ alt }}">
+    </picture>
+    <div class="gallery__desc">{{ desc }}</div>
+  </div>
+</div>
+{% endmacro %}

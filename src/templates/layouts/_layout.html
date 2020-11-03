@@ -1,0 +1,57 @@
+{% from "partials/_activity.html" import activity %}
+{% from "partials/_unit.html" import unit %}
+{% from "partials/_rental-slide.html" import rentalSlide %}
+{% from "partials/_gallery-slide.html" import gallerySlide %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	{% if canonical %}
+	<link rel="canonical" href="{{ canonical }}">
+	{% endif %}
+	{% if keywords %}
+	<meta name="keywords" content="{{ keywords }}">
+	{% endif %}
+	{% if description %}
+	<meta name="description" content="{{ description }}">
+	{% endif %}
+	<link rel="stylesheet" media="all" href="/css/style.css">
+	{% include "../partials/_favicons.html" %}
+</head>
+<body{% if theme=="dark" %} class="page-dark"{% endif %}>
+
+<div class="wrapper{% if type=='inner' %} wrapper_inner{% endif %}">
+	{% include "partials/_header.html" %}
+	<main class="wrapper__content">
+
+		<!-- BEGIN content -->
+		{% block content %}{% endblock %}
+		<!-- END content -->
+
+	</main>
+	{% include "partials/_footer.html" %}
+</div>
+
+<!-- BEGIN scripts -->
+<script src="/js/script.js"></script>
+<!-- END scripts -->
+
+<!--Global site tag (gtag.js) - Google Analytics -->
+<!--<script src="https://www.googletagmanager.com/gtag/js?id=UA-160163221-1"></script>-->
+<!--<script>-->
+	<!--setTimeout(function () {-->
+	  <!--window.dataLayer = window.dataLayer || [];-->
+	  <!--function gtag(){dataLayer.push(arguments);}-->
+	  <!--gtag('js', new Date());-->
+
+	  <!--gtag('config', 'UA-160163221-1');-->
+	<!--}, 3000);-->
+<!--</script>-->
+
+</body>
+</html>

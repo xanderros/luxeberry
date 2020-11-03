@@ -1,0 +1,218 @@
+@mixin placeholder($content) {
+	&::-webkit-input-placeholder {
+		color: $content;
+	}
+	&::-moz-placeholder {
+		color: $content;
+	}
+	&:-ms-input-placeholder {
+		color: $content;
+	}
+}
+
+@mixin text-ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@mixin center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@mixin center-X {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin center-Y {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// font-size and line-height
+@mixin font($fsz,$lh) {
+	font-size: $fsz + px;
+	line-height: $lh/$fsz;
+}
+
+// use this mixin to create scalable elements (usually background images / images) to maintain the ratio.
+// example: @include responsive-ratio(16,9)
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+	$padding: unquote( ( $y / $x ) * 100 + '%' );
+	padding-bottom: $padding;
+}
+
+// sprite png customize
+@mixin sprite($sprite) {
+	@include sprite-position($sprite);
+	@include sprite-width($sprite);
+	@include sprite-height($sprite);
+}
+@mixin sprites($sprites) {
+	@each $sprite in $sprites {
+		$sprite-name: nth($sprite, 10);
+		.#{'icon_' + $sprite-name} {
+			@include sprite($sprite);
+		}
+	}
+}
+@mixin break-word {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+
+/*************** margin-bottom ***************/
+@mixin mb-top {
+	margin-bottom: 97px;
+
+	@media (max-width: $screen-lg) {
+		margin-bottom: 75px;
+	}
+	@media (max-width: $screen-sm) {
+		margin-bottom: 60px;
+	}
+}
+@mixin mb-caption {
+	margin-bottom: 80px;
+
+	@media (max-width: $screen-lg) {
+		margin-bottom: 64px;
+	}
+	@media (max-width: $screen-sm) {
+		margin-bottom: 40px;
+	}
+}
+@mixin mb-title {
+	margin-bottom: 34px;
+
+	@media (max-width: $screen-lg) {
+		margin-bottom: 32px;
+	}
+	@media (max-width: $screen-sm) {
+		margin-bottom: 16px;
+	}
+}
+@mixin mb-section {
+	margin-bottom: 120px;
+
+	&:last-child {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $screen-lg) {
+		margin-bottom: 96px;
+
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
+	@media (max-width: $screen-sm) {
+		margin-bottom: 60px;
+
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
+}
+@mixin mb-cover {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	margin-bottom: 120px;
+
+	&:last-child {
+		margin-bottom: 60px;
+	}
+	@media (max-width: $screen-lg) {
+		padding-top: 96px;
+		padding-bottom: 96px;
+		margin-bottom: 96px;
+
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
+	@media (max-width: $screen-sm) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		margin-bottom: 60px;
+
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
+}
+@mixin mb-item {
+	&:not(:last-child) {
+		margin-bottom: 100px;
+	}
+	@media (max-width: $screen-lg) {
+		&:not(:last-child) {
+			margin-bottom: 90px;
+		}
+	}
+	@media (max-width: $screen-sm) {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+}
+@mixin mb-quote {
+	&:not(:last-child) {
+		margin-bottom: 100px;
+	}
+	@media (max-width: $screen-lg) {
+		&:not(:last-child) {
+			margin-bottom: 75px;
+		}
+	}
+	@media (max-width: $screen-sm) {
+		&:not(:last-child) {
+			margin-bottom: 55px;
+		}
+	}
+}
+@mixin mb-notice {
+	margin-top: 150px;
+	margin-bottom: 150px;
+
+	@media (max-width: $screen-lg) {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	@media (max-width: $screen-sm) {
+		margin-top: 60px;
+		margin-bottom: 50px;
+	}
+}
+@mixin mb-discount {
+	margin-bottom: 172px;
+
+	@media (max-width: $screen-xl) {
+		margin-bottom: 165px;
+	}
+	@media (max-width: $screen-sm) {
+		margin-bottom: 140px;
+	}
+}
+@mixin mb-footer {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+
+	@media (max-width: $screen-xl) {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+	@media (max-width: $screen-lg) {
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+	@media (max-width: $screen-sm) {
+		padding-top: 45px;
+		padding-bottom: 25px;
+	}
+}

@@ -1,0 +1,451 @@
+---
+title: Hamilton Vacation Cottage Rental | Somerset Cottage at West Avenue Cider House | Luxeberry Group
+theme: dark
+canonical: https://luxeberry.ca/hamilton/home/somersetcottage
+description: Recently renovated, gorgeous light-filled and spacious three-bedroom cottage for guests visiting the Hamilton area.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="gallery">
+  <div class="gallery__cover">
+    <div class="gallery__main">
+      <picture class="gallery__picture">
+        <source srcset="/img/cover-somerset_2-main_mob.jpg, /img/cover-somerset_2-main_mob@2x.jpg 2x" media="(max-width: 480px)">
+        <img class="gallery__image" src="/img/cover-somerset_1-main.jpg" srcset="/img/cover-somerset_1-main@2x.jpg 2x" alt="Somerset Cottage at West Avenue Cider House">
+      </picture>
+      <div class="gallery__item">
+        <picture class="gallery__pic">
+          <source data-srcset="/img/gallery-somerset-main_1_mob.jpg, /img/gallery-somerset-main_1_mob@2x.jpg 2x" media="(max-width: 480px)">
+          <img class="gallery__img lazyload" data-src="/img/gallery-somerset-main_1.jpg" data-srcset="/img/gallery-somerset-main_1@2x.jpg 2x" alt="Somerset Cottage at West Avenue Cider House">
+        </picture>
+        <div class="gallery__desc">Living Space backing onto Heritage Apple Orchard</div>
+      </div>
+    </div>
+    <div class="box gallery__slider">
+      <div class="swiper-container slider slider_property">
+        <div class="swiper-wrapper">
+          {% set gallery = [{
+          "img" : "gallery-somerset-main_2",
+          "alt" : "Master Bedroom",
+          "desc" : "Master Bedroom with King Bed and private ensuite bathroom"
+          },{
+          "img" : "gallery-somerset-main_3",
+          "alt" : "Kitchen",
+          "desc" : "Kitchen"
+          },{
+          "img" : "gallery-somerset-main_4",
+          "alt" : "Bedroom 2",
+          "desc" : "Bedroom 2"
+          },{
+          "img" : "gallery-somerset-main_5",
+          "alt" : "Cottage Entrance",
+          "desc" : "Cottage Entrance"
+          },{
+          "img" : "gallery-somerset-main_6",
+          "alt" : "Bedroom 3",
+          "desc" : "Bedroom 3"
+          },{
+          "img" : "gallery-somerset-main_8",
+          "alt" : "Master Bathroom",
+          "desc" : "Master Bathroom"
+          },{
+          "img" : "gallery-somerset-main_9",
+          "alt" : "Master Bathroom Shower",
+          "desc" : "Master Bathroom Shower"
+          },{
+          "img" : "gallery-somerset-main_7",
+          "alt" : "Bathroom 2",
+          "desc" : "Bathroom 2"
+          },{
+          "img" : "gallery-somerset-main_10",
+          "alt" : "West Avenue Cider House Heritage Dry & Cherriosity Cider",
+          "desc" : "West Avenue Cider House Heritage Dry & Cherriosity Cider"
+          },{
+          "img" : "gallery-somerset-main_11",
+          "alt" : "Cider House Main Entrance",
+          "desc" : "Cider House Main Entrance"
+          },{
+          "img" : "gallery-somerset-main_12",
+          "alt" : "Expansive Property",
+          "desc" : "Expansive Property"
+          },{
+          "img" : "gallery-somerset-main_13",
+          "alt" : "Apple Orchard",
+          "desc" : "Apple Orchard"
+          },{
+          "img" : "gallery-somerset-main_14",
+          "alt" : "Expansive Property",
+          "desc" : "Expansive Property"
+          },{
+          "img" : "gallery-somerset-main_15",
+          "alt" : "Expansive Property",
+          "desc" : "Expansive Property"
+          },{
+          "img" : "gallery-somerset-main_16",
+          "alt" : "Expansive Property",
+          "desc" : "Expansive Property"
+          },{
+          "img" : "gallery-somerset-main_17",
+          "alt" : "Cottage Entrance",
+          "desc" : "Cottage Entrance"
+          },{
+          "img" : "gallery-somerset-main_18",
+          "alt" : "Master bedroom",
+          "desc" : "Master bedroom"
+          },{
+          "img" : "gallery-somerset-main_19",
+          "alt" : "Master bedroom",
+          "desc" : "Master bedroom"
+          },{
+          "img" : "gallery-somerset-main_20",
+          "alt" : "Kitchen",
+          "desc" : "Kitchen"
+          },{
+          "img" : "gallery-somerset-main_21",
+          "alt" : "Heritage Apples",
+          "desc" : "Heritage Apples"
+          }] %}
+
+          {% for item in gallery %}
+          {{ gallerySlide(item.img, item.alt, item.desc) }}
+          {% endfor %}
+        </div>
+        <div class="swiper-button-prev"><span class="swiper-arrow-big"></span></div>
+        <div class="swiper-button-next"><span class="swiper-arrow-big"></span></div>
+      </div>
+    </div>
+  </div>
+  <!-- popup gallery (start) -->
+  <div class="gallery__popup">
+    <div class="gallery__box">
+      <div class="gallery__top">
+        <a href="#" class="gallery__close"></a>
+      </div>
+      <div class="gallery__container box box_big">
+        <div class="gallery__side">
+          <div class="gallery__caption">
+            <h2 class="gallery__title">Somerset Cottage at West Avenue Cider House</h2>
+            <img class="gallery__logo lazyload" data-src="/img/logo-somerset.png" data-srcset="/img/logo-somerset@2x.png 2x" alt="Somerset Cottage at West Avenue Cider House">
+          </div>
+        </div>
+        <div class="gallery__base"></div>
+      </div>
+    </div>
+  </div>
+  <!-- popup gallery (end) -->
+</div>
+
+<div class="box">
+  <div class="property">
+    <div class="property__base">
+      <div class="property__top">
+        <h1 class="property__title">Somerset Cottage at West Avenue Cider House</h1>
+        <div class="property__desc">
+          <a href="/hamilton/home/rentals" target="_blank" class="property__location">Hamilton, Ontario</a>
+        </div>
+      </div>
+      <ul class="property__info">
+        <li class="property__info-item">Entire home</li>
+        <li class="property__info-item">6 guests</li>
+        <li class="property__info-item">3 bedrooms</li>
+        <li class="property__info-item">3 beds</li>
+        <li class="property__info-item">2 baths</li>
+      </ul>
+      <div class="property__column">
+        <img class="property__logo" src="/img/logo-somerset.png" srcset="/img/logo-somerset@2x.png 2x"
+             alt="Somerset Cottage at West Avenue Cider House">
+      </div>
+    </div>
+    <div class="property__side">
+      <div class="booking">
+        <div class="booking__btn">
+          <a href="https://www.airbnb.ca/rooms/29300878" target="_blank" class="btn btn_light">Check availability</a>
+        </div>
+        <div class="booking__box">
+          <div class="booking__text">Starting at</div>
+          <div class="booking__price"><strong>${% include 'partials/prices-per-night/_somerset.html' %}</strong> per
+            night
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="expand expand_active expand_small">
+    <div class="expand__wrapper">
+      <div class="expand__container content">
+        <p>
+          The Somerset Cottage lies within the West Avenue Cider House, a cidery near Hamilton that makes the finest
+          cider in Ontario. Heritage apples and quaint countryside surround the cottage, resulting in a relaxed rural
+          vibe that's perfect for your next weekend escape.
+        </p>
+        <p>
+          Central Hamilton is a 20-minute drive away, while downtown Toronto takes about 50 minutes depending on
+          traffic.
+        </p>
+        <h3>Property</h3>
+        <p>
+          The charming three-bedroom cottage has a traditional hardwood exterior that blends seamlessly with the lush
+          rural landscape outside.
+        </p>
+        <p>
+          Indoors, however, the property is decidedly modern, with sleek whitewashed colours contrasting against elegant
+          shades of grey. High-end fixtures, contemporary furnishings, and plush upholstery add a touch of luxury to the
+          place.
+        </p>
+        <p>
+          Complete with a comfy leather couch and chic, earthy décor, the open-plan living room provides a pleasant
+          place to unwind. Floor to ceiling windows afford vistas of the green rolling hills outside, while the adjacent
+          kitchen is a stylish space to cook and dine. Amenities include a two-top burner, toaster, kettle, coffee
+          maker, and mini-fridge.
+        </p>
+        <p>
+          The highlight of the property, however, is the roomy master bedroom, also known as the ‘wedding suite,’ which
+          boasts a super-soft king-sized bed set on a gorgeous four-poster frame. The attached en-suite bathroom comes
+          with cute double vanities and a piping hot walk-in shower.
+        </p>
+        <p>
+          The remaining two bedrooms, which share a bathroom, come complete with plush queen-size beds and chic
+          contemporary décor.
+        </p>
+        <h3>Guest Access</h3>
+        <p>
+          You'll get exclusive access to the entire cottage, as well as the property's 25 acres of rural hiking trails.
+          Of course, you're always welcome to join us at the adjacent West Avenue Cider House, where we serve over 20
+          delicious varieties of the good stuff (order a few flights to find your favourite).
+        </p>
+      </div>
+      <a href="#" class="expand__box">
+        <div class="expand__link">
+          <span class="expand__text expand__text_show">Read more about the property</span>
+          <span class="expand__text expand__text_hide">Hide</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <div class="hr hr_mobile"></div>
+  <section class="expand expand_active expand_big mb">
+    <h2 class="title title_mb">Amenities</h2>
+    <div class="expand__wrapper">
+      <div class="expand__container services">
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-parking"></use>
+            </svg>
+            <h3 class="services__title">Parking</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Free parking available on site for 4 vehicles</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-wifi"></use>
+            </svg>
+            <h3 class="services__title">Internet</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Free WiFi is available</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-oven"></use>
+            </svg>
+            <h3 class="services__title">Kitchen & Dining</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">6 seat dining table</li>
+            <li class="list__item">3 seat kitchen island</li>
+            <li class="list__item">Picnic dining table</li>
+            <li class="list__item">Stovetop and toaster oven</li>
+            <li class="list__item">Cookware</li>
+            <li class="list__item">Utensils & cutting knives</li>
+            <li class="list__item">Bar size refrigerator</li>
+            <li class="list__item">Coffee machine</li>
+            <li class="list__item">Cleaning products</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="21" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-dog"></use>
+            </svg>
+            <h3 class="services__title">Pets</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">No pets</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="21" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+            </svg>
+            <h3 class="services__title">Bedrooms</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">3 bedrooms</li>
+            <li class="list__item">1 king bed</li>
+            <li class="list__item">2 queen beds</li>
+            <li class="list__item">Pillows</li>
+            <li class="list__item">Duvets</li>
+            <li class="list__item">Flat sheets</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bathtub"></use>
+            </svg>
+            <h3 class="services__title">Bathrooms</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">2 bathrooms</li>
+            <li class="list__item">Shower (2)</li>
+            <li class="list__item">Towels</li>
+            <li class="list__item">Hairdryer</li>
+            <li class="list__item">Toilet paper (2 rolls per bathroom)</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="21">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bell"></use>
+            </svg>
+            <h3 class="services__title">Check-in/out</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Smart lock self check-in</li>
+            <li class="list__item">Exterior cameras</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-padlock"></use>
+            </svg>
+            <h3 class="services__title">Security & Safety</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Exterior cameras</li>
+            <li class="list__item">Fire extinguisher</li>
+            <li class="list__item">Carbon monoxide detectors</li>
+            <li class="list__item">Smoke detectors</li>
+            <li class="list__item">First aid kit</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-barbecue"></use>
+            </svg>
+            <h3 class="services__title">Outdoor</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">BBQ grill</li>
+            <li class="list__item">Outdoor space with picnic table</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-television"></use>
+            </svg>
+            <h3 class="services__title">Entertainment</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Netflix app (must use own account)</li>
+            <li class="list__item">Amazon Prime app (must use own account)</li>
+            <li class="list__item">Card games</li>
+            <li class="list__item">Board games</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-gear"></use>
+            </svg>
+            <h3 class="services__title">Miscellaneous</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Air conditioning</li>
+            <li class="list__item">Heating</li>
+            <li class="list__item">Smoke-free property</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="expand__box">
+        <div class="expand__link">
+          <span class="expand__text expand__text_show">Show all amenties</span>
+          <span class="expand__text expand__text_hide">Hide</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <h2 class="title title_mb">Location</h2>
+  <!-- map (start) -->
+  <div class="map">
+    <div class="map__box">
+      <a href="#" class="map__pic zoom-link">
+        <picture class="zoom__pic">
+          <source data-srcset="/img/map-tobermory_mob.jpg, /img/map-tobermory_mob@2x.jpg 2x" media="(max-width: 480px)">
+          <img class="map__img lazyload" data-src="/img/map-tobermory.jpg" data-srcset="/img/map-tobermory@2x.jpg 2x"
+               alt="Tobermory map">
+        </picture>
+      </a>
+      <div class="map__content">
+        <iframe class="map__frame map__frame_location" src=""
+                data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11601.352364025533!2d-79.9815735!3d43.3699543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25ec3e732080ff9c!2sWest%20Avenue%20Cider%20House!5e0!3m2!1sen!2sca!4v1593734562243!5m2!1sen!2sca"
+                width="1238" height="696" frameborder="0" allowfullscreen="">
+        </iframe>
+        <a href="#" class="map__close">
+          <svg class="map__close-icon" width="26" height="26">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="map__view">
+      <a href="#" target="_blank" class="map__link zoom-link">View map</a>
+      <a href="#" class="map__link map__btn map__btn_location">View location on Google Maps</a>
+    </div>
+    <div class="map__bottom">
+      <div class="booking">
+        <div class="booking__btn">
+          <a href="https://airbnb.com/h/tobermoryshores" target="_blank" class="btn btn_light">Check availability</a>
+        </div>
+        <div class="booking__box">
+          <div class="booking__text">Starting at</div>
+          <div class="booking__price"><strong>${% include 'partials/prices-per-night/_tobermoryshores.html' %}</strong>
+            per night
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zoom">
+      <a href="#" class="zoom__close"></a>
+      <div class="zoom__box">
+        <div class="zoom__wrap">
+          <picture class="zoom__pic">
+            <source data-srcset="/img/map-tobermory_zoom_mob.jpg" media="(max-width: 576px)">
+            <img class="zoom__img lazyload" data-src="/img/map-tobermory_zoom.jpg"
+                 data-srcset="/img/map-tobermory_zoom@2x.jpg 2x" alt="Tobermory map">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map (end) -->
+  <div class="hr hr_desktop"></div>
+
+  {% include "partials/_explore-other-vacation-rentals.html" %}
+
+</div>
+
+{% endblock %}

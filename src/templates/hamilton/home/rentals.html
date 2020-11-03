@@ -1,0 +1,295 @@
+---
+title: Hamilton Vacation Home Rentals | Luxeberry Group
+theme: dark
+canonical: https://luxeberry.ca/hamilton/home/rentals
+description: A list of handpicked Hamilton vacation rental properties chosen for their outstanding design, quality and comfort. Only the best vacation homes are selected.    
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_height_small cover_bg_left">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-hamilton_1-main_mob.jpg, /img/cover-hamilton_1-main_mob@2x.jpg 2x" media="(max-width: 480px)">
+    <img class="cover__img" src="/img/cover-hamilton_1-main.jpg" srcset="/img/cover-hamilton_1-main@2x.jpg 2x" alt="Tobermory">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading cover__heading_medium">Find exclusive short-term home and condo rentals in Hamilton</h1>
+      <div class="cover__desc">
+        <p class="cover__desc-main_alt">
+          Discover the scenic beauty, thriving art scene, outdoor recreation, and waterfront areas of Hamilton.
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="box">
+
+  <section class="mb">
+    <div class="caption filter filter_sort">
+      <h2 class="title">Top Hamilton Vacation Home Rentals</h2>
+      <div class="caption__side">
+        <div class="filter__container">
+          <div class="filter__box">
+            <a href="#" class="filter__btn">SORT BY: <span class="filter__text">PRICE: HIGH TO LOW</span></a>
+            <div class="filter__dropdown">
+              <div class="filter__row">
+                <div class="radio">
+                  <input class="radio__input" type="radio" id="price-hl" name="radio-sort" checked>
+                  <label class="radio__label" for="price-hl">Price: High to Low</label>
+                </div>
+              </div>
+              <div class="filter__row">
+                <div class="radio">
+                  <input class="radio__input" type="radio" id="price-lh" name="radio-sort">
+                  <label class="radio__label" for="price-lh">Price: Low to High</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offers js-filter js-filter_sort">
+      <div class="offers__item js-filter__item" data-price="{% include 'partials/prices-per-night/_somerset.html' %}" data-distance="5">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental1 = [{
+                "img"  : "gallery-somerset-main_1",
+                "title": "Somerset Living Room"
+                },{
+                "img"  : "gallery-somerset-main_2",
+                "title": "Somerset Master Bedroom"
+                },{
+                "img"  : "gallery-somerset-main_3",
+                "title": "Somerset Kitchen"
+                },{
+                "img"  : "gallery-somerset-main_4",
+                "title": "Somerset Bedroom"
+                },{
+                "img"  : "gallery-somerset-main_5",
+                "title": "Somerset Cottage"
+                }] %}
+
+                {% for item in rental1 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11601.352364025533!2d-79.9815735!3d43.3699543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25ec3e732080ff9c!2sWest%20Avenue%20Cider%20House!5e0!3m2!1sen!2sca!4v1597937538050!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d92898.20204471232!2d-79.99837781041894!3d43.312818882739116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x882c986c27de778f%3A0x2b6aee56d8df0e21!2sHamilton%2C%20ON!3m2!1d43.2557206!2d-79.8711024!4m5!1s0x882b7dbe1db62053%3A0x25ec3e732080ff9c!2sWest%20Avenue%20Cider%20House%2C%2084%20Concession%20Rd%208%20E%2C%20Freelton%2C%20ON%20L0R%201K0!3m2!1d43.369954299999996!2d-79.9815735!5e0!3m2!1sen!2sca!4v1597937756515!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Somerset Cottage</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Hamilton, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">20 min to Hamilton centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              Heritage apples and quaint countryside surround the cottage, resulting in a relaxed rural vibe that's perfect for your next weekend escape. 
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">6</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">2</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include 'partials/prices-per-night/_somerset.html' %}</strong> per night</div>
+            </div>
+            <a href="/hamilton/home/somersetcottage" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+<div class="offers__item js-filter__item" data-price="{% include 'partials/prices-per-night/_elderberry.html' %}" data-distance="6">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental2 = [{
+                "img"  : "gallery-elderberry-main_2",
+                "title": "Kitchen"
+                },{
+                "img"  : "gallery-elderberry-main_4",
+                "title": "Dining Room Table"
+                },{
+                "img"  : "gallery-elderberry-main_5",
+                "title": "Living Room"
+                },{
+                "img"  : "gallery-elderberry-main_11",
+                "title": "Games Room"
+                },{
+                "img"  : "gallery-elderberry-main_6",
+                "title": "Living Room TV"
+                }] %}
+
+                {% for item in rental2 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11596.566347706952!2d-79.99041363164808!3d43.39496997710772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDIzJzQxLjkiTiA3OcKwNTgnNTQuMCJX!5e0!3m2!1sen!2sca!4v1585496676526!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d185273.35355739566!2d-79.85062716805183!3d43.48363761512192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!3m2!1d43.653226!2d-79.3831843!4m5!1s0x882b7c66f21dd597%3A0xed6da70e1c02d20!2sCarlisle%2C%20Hamilton%2C%20ON%2C%20Canada!3m2!1d43.3941952!2d-79.9804642!5e0!3m2!1sen!2sca!4v1585496908637!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Elderberry Manor</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Carlise, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">52 min to Toronto centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              A newly renovated luxury home surrounded by century-old housing, modern subdivisions and estates nestled along Bronte Creek. Enjoy the chef's kitchen, games room, workout room, and a large backyard with a gorgeous saltwater pool. 
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">8</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">4</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">4</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include 'partials/prices-per-night/_elderberry.html' %}</strong> per night</div>
+            </div>
+            <a href="/hamilton/home/elderberrymanor" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "partials/_list-vacations.html" %}
+</div>
+
+{% endblock %}

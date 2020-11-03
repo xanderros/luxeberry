@@ -1,0 +1,87 @@
+---
+title: Top Canadian Cottage Rentals and Vacation Homes | Luxeberry Group   
+theme: dark
+canonical: https://luxeberry.ca
+description: Luxeberry Group offers a list of handpicked cottage rentals and vacation homes chosen for their outstanding design, quality and comfort. Only the best cottages are selected.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<section class="cover cover_main cover_bg_left">
+  <div class="swiper-container slider slider_cover">
+    <div class="swiper-wrapper">
+      {% set covers = [{
+      "img": "cover-vacation-home-9",
+      "alt": "Waterfront Cottage Tobermory"
+      },{
+      "img": "cover-vacation-home-5",
+      "alt": "Cottage Grand Bend"
+      },{
+      "img": "cover-vacation-home-2",
+      "alt": "Cottage Tobermory"
+      },{
+      "img": "cover-vacation-home-1",
+      "alt": "Lakefront Cottage"
+      },{
+      "img": "cover-vacation-home-8",
+      "alt": "Cottage Grand Bend"
+      }] %}
+
+      {% for item in covers %}
+      <div class="swiper-slide">
+        <picture class="cover__pic">
+          <source data-srcset="/img/{{ item.img }}_mob.jpg, /img/{{ item.img }}_mob@2x.jpg 2x" media="(max-width: 480px) and (max-height: 900px)">
+          <img class="cover__img lazyload" data-src="/img/{{ item.img }}.jpg" data-srcset="/img/{{ item.img }}@2x.jpg 2x" alt="{{ item.alt }}">
+        </picture>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading">Handpicked selection of Canada's best vacation rentals</h1>
+      <div class="cover__desc">
+        <p class="hide-mob">
+          Luxeberry takes the guesswork out of booking the best holiday homes and cottages throughout Canada. Our carefully curated collection of chic vacation rentals are bucket-list destinations in of themselves.
+        </p>
+      </div>
+      <div class="cover__btn">
+        <a href="/vacation/rentals" class="btn btn_light btn_size_big">Explore Rentals</a>
+      </div>
+    </section>
+    <!--
+    <section class="cover__box">
+      <h1 class="cover__title">Handpicked selection of Canada's best vacation rentals</h1>
+      <div class="cover__btn">
+        <a href="/vacation/rentals" class="btn btn_light btn_size_big">Explore Rentals</a>
+      </div>
+    </section>
+    -->
+  </div>
+</section>
+
+<div class="box">
+  <div class="mb-big content">
+    <p>
+At Luxeberry, a team of specialist hospitality professionals performs a 100+ point inspection on every single home–a rigorous selection process to ensure we only work with the best. 
+    </p>
+    <p>
+We also include in-depth quality control to ensure your linen is crisp and the entire house spotlessly clean and sanitized. And with a professional support team on hand to assist your every need, the process is simple and streamlined from A to Z.
+    </p>
+    <p>
+And for our happy customers, this guarantees you’ll stay in a stylish luxury property with impeccable function and form. All you have to do is choose a property that aligns with your needs and book it. It’s that simple. Rest assured, you’ll be staying in a funky and functional home where everything is just as it should be.
+    </p>
+  </div>
+
+  {% include "partials/_featured-vacation-rentals.html" %}
+
+  <section class="mb-big">
+   
+  </section>
+</div>
+
+{% endblock %}

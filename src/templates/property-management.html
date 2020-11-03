@@ -1,0 +1,781 @@
+---
+title: Vacation Property Short Term Rental Management | Luxeberry Group
+theme: dark
+canonical: https://luxeberry.ca/property-management
+description: We carefully handpick vacation properties that offer outstanding design, quality and comfort and work to maximize earning potential, eliminate or minimize owner involvement and cultivate the needs of guests to maintain five-star satisfaction.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_bg_left">
+  <picture class="cover__pic">
+    <source srcset="/img/cover_property_management_mob.jpg, /img/cover_property_management_mob@2x.jpg 2x" media="(max-width: 480px) and (max-height: 900px)">
+    <img class="cover__img" src="/img/cover_property_management.jpg" srcset="/img/cover_property_management@2x.jpg 2x" alt="Exceptional vacation rental management">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading">Exceptional vacation rental management</h1>
+      <div class="cover__desc">
+        <p class="cover__desc-main">
+          Reduce stress and unlock your property’s full earning potential
+        </p>
+        <p class="hide-mob">
+          We carefully handpick vacation properties that offer outstanding design, quality
+          and comfort and work to maximize earning potential, eliminate or minimize owner
+          involvement and cultivate the needs of guests to maintain five-star satisfaction.
+        </p>
+        <p class="hide-mob">
+          Luxeberry Group prioritizes your peace of mind. You can relax in the knowledge
+          your investment is in good hands, and you can find the time to focus on the
+          important things in life.
+        </p>
+      </div>
+      <div class="cover__button">
+        <a href="/submit" class="btn btn_size_small btn_light">Submit Your Property</a>
+      </div>
+    </section>
+  </div>
+  <a href="#content" class="cover__down js-anchor">
+    <svg class="cover__arrow" width="60" height="54">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-arrow"></use>
+    </svg>
+  </a>
+</div>
+
+<div class="box" id="content">
+  <h2 class="title">Management options to satisfy all property owners and investors</h2>
+  <div class="content mb">
+    <p>
+      From hands-on management to à la carte and leasing services, Luxeberrry Group provides a comprehensive range of property services. We exclusively cater to the owners of
+      unique and desirable investment properties in Southern Ontario, providing extensive services at competitive rates. Browse our management options below or Contact Us today
+      to see if your property is Luxeberry ready and to obtain a free earning potential analysis!
+    </p>
+    <p>
+      Select a property managemennt option:
+    </p>
+  </div>
+  <div class="tabs">
+    <ul class="tabs__nav">
+      <li class="tabs__item tabs__item_active">
+        <a href="#full-service-management" class="tabs__link">
+          <span class="tabs__pic">
+             <svg class="tabs__icon" width="38" height="38">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-hand"></use>
+             </svg>
+          </span>
+          Full Service<br> <span class="tabs__link-desktop">Management</span><span class="tabs__link-mob">Mgmt</span>
+        </a>
+      </li>
+      <li class="tabs__item">
+        <a href="#guest-management" class="tabs__link">
+          <span class="tabs__pic">
+             <svg class="tabs__icon" width="38" height="36">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-support"></use>
+             </svg>
+          </span>
+          Guest<br> <span class="tabs__link-desktop">Management</span><span class="tabs__link-mob">Mgmt</span>
+        </a>
+      </li>
+      <li class="tabs__item">
+        <a href="#services" class="tabs__link">
+          <span class="tabs__pic">
+             <svg class="tabs__icon" width="36" height="36">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-cursor"></use>
+             </svg>
+          </span>
+          Luxeberry Listing
+        </a>
+      </li>
+      <li class="tabs__item">
+        <a href="#lease" class="tabs__link">
+          <span class="tabs__pic">
+             <svg class="tabs__icon" width="35" height="35">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-lease"></use>
+             </svg>
+          </span>
+          Lease to<br> Luxeberry
+        </a>
+      </li>
+    </ul>
+    <div class="tabs__container">
+      <div class="tabs__section" id="full-service-management">
+        <!-- Full Service Management -->
+        <div class="units mb-big">
+          {% set fullServiceManagement = [{
+          "side" : "right",
+          "img"  : "property_management_full_service",
+          "title": "We take care of everything",
+          "desc" : "
+          <p>
+            Our hotel-style procedures and cutting-edge smart technology manage your reservations, check-ins,
+            housekeeping and everything in between 24/7 so you don’t have to do a thing. We make sure every
+            single stay is a 5-star experience for your guests!
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_guest_management",
+          "title": "Guest management",
+          "desc" : "
+          <p>
+            Luxeberry’s guest selection is based on numerous factors to ensure your
+            property is always in good hands. We thoroughly screen all potential visitors,
+            so only the most reputable guests get access to your property.
+          </p>
+          <p>
+            Luxeberry offers around the clock assistance for booking inquiries, guest
+            support, and maintenance issues—rest assured you’ll never miss a late-night
+            reservation. We’ll take good care of your guests on your behalf and stop
+            potential emergencies in their tracks.
+          </p>
+          "
+          },{
+          "side" : "right",
+          "img"  : "property_management_listing_optimization",
+          "title": "Listing optimization",
+          "desc" : "
+          <p>
+            We create and manage your listings on the most profitable platforms, like
+            Airbnb, Vrbo, Home Away, Booking.com, luxeberry.ca and adjust the nightly
+            rates for seasons and events to elevate your income.
+          </p>
+          <p>
+            Your property listing will feature high-quality HD photography and
+            professionally crafted descriptions to highlight its unique features—leading
+            to a better guest experience, better reviews, and a better nightly rate.
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_home_care",
+          "title": "Better home care and housekeeping",
+          "desc" : "
+          <p>
+            Every fully-managed Luxeberry property has a dedicated team of local
+            professionals to meticulously care for your home. Our contractors clean the
+            property between each stay and carry out careful inspections on check-out to
+            ensure everything is as it should be.
+          </p>
+          <p>
+            We replenish all your home essentials and schedule service work as necessary
+            with approved local professionals.
+          </p>
+          "
+          },{
+          "side" : "right",
+          "pic"  : "middle",
+          "img"  : "property_management_technology",
+          "title": "Technology + damage prevention",
+          "desc" : "
+          <p>
+            We protect your investment property by installing nearly $2,000 worth of
+            home security and smart technology before we accept your first booking.
+          </p>
+          <p>
+            We hook up smart locks, cameras, noise monitors, digital thermostats,
+            and more. Our rigorous guest vetting process helps eliminate property
+            damage and maintain cordial relations with your neighbours.
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_fresh_linen",
+          "title": "Fresh linen and premium toiletries",
+          "desc" : "
+          <p>
+            Guests love a proper good pampering. Clean duvet covers, crisp linen sheets,
+            fluffy soft towels, and premium toiletries add a luxurious touch to the vacation
+            rental experience. These little added extras don’t cost much but add
+            immeasurably to your guest feedback score over time. And you won’t have to
+            lift a finger because Luxeberry takes care of the whole shebang on your behalf.
+          </p>
+          "
+          },{
+          "side" : "right",
+          "img"  : "property_management_insurance",
+          "title": "Short-term rental insurance",
+          "desc" : "
+          <p>
+            Because homeowner’s insurance is designed for owner-occupied or
+            long-term rental properties, most policies simply won’t cover short-term
+            rental activity. We’ve partnered with an industry-leading insurance
+            company to offer an extra layer of protection against liability and property
+            damage. Their extensive insurance fills in the gaps, giving you the extra
+            protection you need: additional coverage for your property, valuables,
+            and guests for the duration of their stay.
+          </p>
+          "
+          }] %}
+
+          {% for item in fullServiceManagement %}
+          {{ unit(item.side, item.img, item.title, item.desc, item.pic) }}
+          {% endfor %}
+        </div>
+        <section>
+          <h2 class="title">Luxeberry requirements</h2>
+          <div class="content mb">
+            <p>
+              Every property is handpicked for its expertly designed space, character and comfort to enhance guest satisfaction and optimize sales. Each Luxeberry
+              property must provide a high-end holiday experience and pass a comprehensive 100+ point inspection with a focus on <strong>form, function, and feel</strong>.
+            </p>
+          </div>
+          <div class="grid grid_req">
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/form.png" data-srcset="/img/form@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FORM</strong> refers to a home’s layout and design.
+                  Luxeberry properties must have plenty of
+                  space to comfortably accommodate every
+                  guest, with sufficient seating in both the
+                  dining room and the lounge. Patios must
+                  feature ample outdoor furnishings and
+                  nowhere in the home can feel even the
+                  slightest bit cramped.
+                </div>
+              </div>
+            </div>
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/function.png" data-srcset="/img/function@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FUNCTION</strong> refers to the quality and efficient
+                  operation of all individual components.
+                  Luxeberry only accepts homes where
+                  kitchens come with chef-quality appliances
+                  and the HVAC units are effective yet utterly
+                  silent. We require at least one bathroom for
+                  every two bedrooms and insist on the latest
+                  home entertainment tech.
+                </div>
+              </div>
+            </div>
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/feel.png" data-srcset="/img/feel@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FEEL</strong> refers to the emotions your property
+                  evokes among guests. We assess the
+                  architecture of your home and evaluate the
+                  gardens and landscaping outside. Décor,
+                  furnishings, and fixtures should work together
+                  in unison to elicit a million-dollar vibe. Our
+                  favourite properties boast unique features
+                  and exude a sense of exclusivity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="hr hr_mobile-s"></div>
+        <section>
+          <h2 class="title title_mb">The onboarding process</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/submit.png" data-srcset="/img/submit@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 1: Submitting your property</h3>
+                <div class="step__text">
+                  Simply <a href="/submit">fill out this form</a> to express your interest in joining our exclusive list of handpicked vacation homes. If your property complies
+                  with our stringent requirements for form, function, and feel, we’ll arrange a meeting with one of our short-term rental property
+                  experts to find out if we’re a mutual fit.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/discuss.png" data-srcset="/img/discuss@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 2: Discussing the details</h3>
+                <div class="step__text">
+                  At the initial meeting, our rental gurus will evaluate your property and provide a detailed revenue estimation. In many situations,
+                  these seasoned veterans can even suggest improvements to your décor and amenities to attract a more favourable nightly rate.
+                  We discuss your special requirements and schedule to streamline the process.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/create.png" data-srcset="/img/create@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 3: Creating the perfect listing</h3>
+                <div class="step__text">
+                  One of our professional real estate photographers will personally visit your home to capture it at its best. Our copywriters will cook
+                  up a catchy name, develop a persuasive description, and list your neatly packaged property on the top platforms like Airbnb,
+                  Booking.com, luxeberry.ca, and HomeAway.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/receive.png" data-srcset="/img/receive@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 4: Receiving your first guest</h3>
+                <div class="step__text">
+                  Once we’ve updated your property with crisp white linen and premium bathroom amenities, you’re now ready to say hello to your
+                  very first guest. But don’t worry; you won’t have to lift a finger. Luxeberry will take care of the check-ins, guest communication, and
+                  house cleaning on your behalf.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="btn-wrap btn-wrap_big btn-wrap_center">
+          <a href="/submit" class="btn btn_size_large btn_light">Submit Your Property</a>
+        </div>
+        <!-- Full Service Management (end) -->
+      </div>
+      <div class="tabs__section" id="guest-management">
+        <!-- Guest Management -->
+        <div class="units mb-big">
+          {% set guestManagement = [{
+          "side" : "left",
+          "img"  : "property_management_guest_management",
+          "title": "Guest management",
+          "desc" : "
+          <p>
+            Luxeberry’s guest selection is based on numerous factors to ensure your
+            property is always in good hands. We thoroughly screen all potential visitors,
+            so only the most reputable guests get access to your property.
+          </p>
+          <p>
+            Luxeberry offers around the clock assistance for booking inquiries, guest
+            support, and maintenance issues—rest assured you’ll never miss a late-night
+            reservation. We’ll take good care of your guests on your behalf and stop
+            potential emergencies in their tracks.
+          </p>
+          "
+          },{
+          "side" : "right",
+          "img"  : "property_management_listing_optimization",
+          "title": "Listing optimization",
+          "desc" : "
+          <p>
+            We create and manage your listings on the most profitable platforms, like
+            Airbnb, Vrbo, Home Away, Booking.com, luxeberry.ca and adjust the nightly
+            rates for seasons and events to elevate your income.
+          </p>
+          <p>
+            Your property listing will feature high-quality HD photography and
+            professionally crafted descriptions to highlight its unique features—leading
+            to a better guest experience, better reviews, and a better nightly rate.
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_home_care",
+          "title": "Cleaning & Maintenance Coordination",
+          "desc" : "
+          <p>
+            We will work with your existing cleanering partners to ensure your place is clean
+            for each guest. We’ll also work with your home repair contractors to schedule
+            maintenance and repairs when issues arise.
+          </p>
+          "
+          },{
+          "side" : "right",
+          "img"  : "property_management_insurance",
+          "title": "Short-term rental insurance",
+          "desc" : "
+          <p>
+            Because homeowner’s insurance is designed for owner-occupied or
+            long-term rental properties, most policies simply won’t cover short-term
+            rental activity. We’ve partnered with an industry-leading insurance
+            company to offer an extra layer of protection against liability and property
+            damage. Their extensive insurance fills in the gaps, giving you the extra
+            protection you need: additional coverage for your property, valuables,
+            and guests for the duration of their stay.
+          </p>
+          "
+          }] %}
+
+          {% for item in guestManagement %}
+          {{ unit(item.side, item.img, item.title, item.desc, item.pic) }}
+          {% endfor %}
+        </div>
+        <section>
+          <h2 class="title">Luxeberry requirements</h2>
+          <div class="content mb">
+            <p>
+              Every property is handpicked for its expertly designed space, character and comfort to enhance guest satisfaction and optimize sales. Each Luxeberry
+              property must provide a high-end holiday experience and pass a comprehensive 100+ point inspection with a focus on <strong>form, function, and feel</strong>.
+            </p>
+          </div>
+          <div class="grid grid_req">
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/form.png" data-srcset="/img/form@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FORM</strong> refers to a home’s layout and design.
+                  Luxeberry properties must have plenty of
+                  space to comfortably accommodate every
+                  guest, with sufficient seating in both the
+                  dining room and the lounge. Patios must
+                  feature ample outdoor furnishings and
+                  nowhere in the home can feel even the
+                  slightest bit cramped.
+                </div>
+              </div>
+            </div>
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/function.png" data-srcset="/img/function@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FUNCTION</strong> refers to the quality and efficient
+                  operation of all individual components.
+                  Luxeberry only accepts homes where
+                  kitchens come with chef-quality appliances
+                  and the HVAC units are effective yet utterly
+                  silent. We require at least one bathroom for
+                  every two bedrooms and insist on the latest
+                  home entertainment tech.
+                </div>
+              </div>
+            </div>
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/feel.png" data-srcset="/img/feel@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FEEL</strong> refers to the emotions your property
+                  evokes among guests. We assess the
+                  architecture of your home and evaluate the
+                  gardens and landscaping outside. Décor,
+                  furnishings, and fixtures should work together
+                  in unison to elicit a million-dollar vibe. Our
+                  favourite properties boast unique features
+                  and exude a sense of exclusivity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="hr hr_mobile-s"></div>
+        <section>
+          <h2 class="title title_mb">The onboarding process</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/submit.png" data-srcset="/img/submit@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 1: Submitting your property</h3>
+                <div class="step__text">
+                  Simply <a href="/submit">fill out this form</a> to express your interest in joining our exclusive list of handpicked vacation homes. If your property complies
+                  with our stringent requirements for form, function, and feel, we’ll arrange a meeting with one of our short-term rental property
+                  experts to find out if we’re a mutual fit.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/discuss.png" data-srcset="/img/discuss@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 2: Discussing the details</h3>
+                <div class="step__text">
+                  At the initial meeting, our rental gurus will evaluate your property and provide a detailed revenue estimation. In many situations,
+                  these seasoned veterans can even suggest improvements to your décor and amenities to attract a more favourable nightly rate.
+                  We discuss your special requirements and schedule to streamline the process.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/create.png" data-srcset="/img/create@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 3: Creating the perfect listing</h3>
+                <div class="step__text">
+                  One of our professional real estate photographers will personally visit your home to capture it at its best. Our copywriters will cook
+                  up a catchy name, develop a persuasive description, and list your neatly packaged property on the top platforms like Airbnb,
+                  Booking.com, luxeberry.ca, and HomeAway.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/receive.png" data-srcset="/img/receive@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 4: Receiving your first guest</h3>
+                <div class="step__text">
+                  Once we’ve updated your property with crisp white linen and premium bathroom amenities, you’re now ready to say hello to your
+                  very first guest. But don’t worry; you won’t have to lift a finger. Luxeberry will take care of the check-ins, guest communication on
+                  your behalf.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="btn-wrap btn-wrap_big btn-wrap_center">
+          <a href="/submit" class="btn btn_size_large btn_light">Submit Your Property</a>
+        </div>
+        <!-- Guest Management (end) -->
+      </div>
+      <div class="tabs__section" id="services">
+        <!-- À la carte Services -->
+        <div class="units mb-big">
+          {% set listing = [{
+          "side" : "right",
+          "img"  : "property_management_listing",
+          "title": "Luxeberry self managed listing",
+          "desc" : "
+          <p>
+            If your vacation home passes the Luxeberry test our team will build your
+            listing and actively promote your property to Luxeberry’s audience of
+            discerning travellers and help you attract the right guests while you
+            maintain complete control over your property.
+          </p>
+          <p>
+            We specialize in promoting our listings to pre-screened affluent and
+            mature guests—helping eliminate unruly visitors and improving nightly
+            rates.
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_requirements",
+          "title": "Stringent Luxeberry requirements",
+          "desc" : "
+          <p>
+            Only hosts with customer ratings of 4.8+ on popular platforms like Airbnb
+            with properties that pass our comprehensive 100+ point inspection will be
+            accepted and listed on the Luxeberry website and promoted through
+            our social network. Failure to maintain a high-level guest satisfaction will
+            result in the immediate delisting of a property.
+          </p>
+          "
+          }] %}
+
+          {% for item in listing %}
+          {{ unit(item.side, item.img, item.title, item.desc, item.pic) }}
+          {% endfor %}
+        </div>
+        <section>
+          <h2 class="title">Luxeberry requirements</h2>
+          <div class="content mb">
+            <p>
+              Every property is handpicked for its expertly designed space, character and comfort to enhance guest satisfaction and optimize sales. Each Luxeberry
+              property must provide a high-end holiday experience and pass a comprehensive 100+ point inspection with a focus on <strong>form, function, and feel</strong>.
+            </p>
+          </div>
+          <div class="grid grid_req">
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/form.png" data-srcset="/img/form@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FORM</strong> refers to a home’s layout and design.
+                  Luxeberry properties must have plenty of
+                  space to comfortably accommodate every
+                  guest, with sufficient seating in both the
+                  dining room and the lounge. Patios must
+                  feature ample outdoor furnishings and
+                  nowhere in the home can feel even the
+                  slightest bit cramped.
+                </div>
+              </div>
+            </div>
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/function.png" data-srcset="/img/function@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FUNCTION</strong> refers to the quality and efficient
+                  operation of all individual components.
+                  Luxeberry only accepts homes where
+                  kitchens come with chef-quality appliances
+                  and the HVAC units are effective yet utterly
+                  silent. We require at least one bathroom for
+                  every two bedrooms and insist on the latest
+                  home entertainment tech.
+                </div>
+              </div>
+            </div>
+            <div class="grid__cell">
+              <div class="req">
+                <div class="req__top">
+                  <img class="req__img lazyload" data-src="/img/feel.png" data-srcset="/img/feel@2x.png 2x" alt="">
+                </div>
+                <div class="req__content">
+                  <strong>FEEL</strong> refers to the emotions your property
+                  evokes among guests. We assess the
+                  architecture of your home and evaluate the
+                  gardens and landscaping outside. Décor,
+                  furnishings, and fixtures should work together
+                  in unison to elicit a million-dollar vibe. Our
+                  favourite properties boast unique features
+                  and exude a sense of exclusivity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="hr hr_mobile-s"></div>
+        <section>
+          <h2 class="title title_mb">The onboarding process</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/submit.png" data-srcset="/img/submit@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 1: Submitting your property</h3>
+                <div class="step__text">
+                  Simply <a href="/submit">fill out this form</a> to express your interest in joining our exclusive list of handpicked vacation homes. If your property complies
+                  with our stringent requirements for form, function, and feel, we’ll arrange a meeting with one of our short-term rental property
+                  experts to find out if we’re a mutual fit.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/discuss.png" data-srcset="/img/discuss@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 2: Discussing the details</h3>
+                <div class="step__text">
+                  At the initial meeting, our rental gurus will evaluate your property and provide a detailed revenue estimation. In many situations,
+                  these seasoned veterans can even suggest improvements to your décor and amenities to attract a more favourable nightly rate.
+                  We discuss your special requirements and schedule to streamline the process.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <img class="step__img lazyload" data-src="/img/create.png" data-srcset="/img/create@2x.png 2x" alt="">
+              </div>
+              <div class="step__content">
+                <h3 class="step__title">Step 3: Creating the perfect listing</h3>
+                <div class="step__text">
+                  One of our professional real estate photographers will personally visit your home to capture it at its best. Our copywriters will cook
+                  up a catchy name, develop a persuasive description, and list your neatly packaged property on the top platforms like Airbnb,
+                  Booking.com, luxeberry.ca, and HomeAway.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="btn-wrap btn-wrap_big btn-wrap_center">
+          <a href="/submit" class="btn btn_size_large btn_light">Submit Your Property</a>
+        </div>
+        <!-- À la carte Services (end) -->
+      </div>
+      <div class="tabs__section" id="lease">
+        <!-- Lease to Luxeberry -->
+        <div class="units mb-big">
+          {% set lease = [{
+          "side" : "right",
+          "img"  : "property_management_lease",
+          "title": "Lease to Luxeberry",
+          "desc" : "
+          <p>
+            Our leasing package is ideal for property owners seeking a fixed monthly
+            income and investors looking to grow their real estate portfolio.
+          </p>
+          <p>
+            Luxeberry leases your property for an extended period and gives you
+            guaranteed monthly payments regardless of occupancy rates. Elevate your
+            net operating income and de-risk your cash flow at the same time by leasing
+            your property to Luxeberry.
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_ideal_tenant",
+          "title": "Luxeberry, your ideal tenant",
+          "desc" : "
+          <p>
+            Optimize your net operating income and forget about credit loss,
+            ongoing maintenance, vacancy rates, leasing commissions, and
+            turnover costs.
+          </p>
+          <p>
+            Our expert team assesses the relevant rental and zoning laws and
+            evaluates the financial viability for all parties involved. Once our
+            partnership is given the green light, our in-house interior design team
+            glams up the property with fancy furnishings and crisp new linen. It’s
+            a truly hands off approach that sees cash land in your bank each
+            month with minimal fuss.
+          </p>
+          "
+          },{
+          "side" : "right",
+          "pic"  : "middle",
+          "img"  : "property_management_technology",
+          "title": "Technology + damage prevention",
+          "desc" : "
+          <p>
+            We make sure your investment is protected by installing nearly $2,000 in
+            your property before it takes a single booking.
+          </p>
+          <p>
+            Using smart locks, cameras, noise moinitors and digital thermostats along
+            with our stringent guest vetting process helps eliminate property damage,
+            control utility costs, and maintain cordial relations with your neighbours.
+          </p>
+          "
+          },{
+          "side" : "left",
+          "img"  : "property_management_flexible",
+          "title": "Flexible Partners",
+          "desc" : "
+          <p>
+            Leasing to Luxeberry doesn’t lock you out of your property. We
+            structure all our long-term leases to cater to the client’s needs,
+            so you can block off specific dates to enjoy your own holiday
+            home. And just like every other guest we host, you’ll arrive to
+            find a sparkling clean property with fresh linen and fully
+            stocked amenities.
+          </p>
+          "
+          }] %}
+
+          {% for item in lease %}
+          {{ unit(item.side, item.img, item.title, item.desc, item.pic) }}
+          {% endfor %}
+        </div>
+        <section class="mb-big">
+          <h2 class="title">Stringent Luxeberry requirements</h2>
+          <div class="content">
+            <p>
+              We personally handpick all our properties to offer optimal character, comfort, and design. Each Luxeberry property must afford a luxury rental
+              experience and pass a comprehensive 100+ point inspection.
+            </p>
+            <p>
+              Fill out <a href="/submit">this form</a> to apply. If your property is up to scratch, we’ll get in touch to arrange a meeting with one of our vacation rental experts and
+              further assess the home.
+            </p>
+          </div>
+        </section>
+        <div class="btn-wrap">
+          <a href="/submit" class="btn btn_size_large btn_light">Submit Your Property</a>
+        </div>
+        <!-- Lease to Luxeberry (end) -->
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

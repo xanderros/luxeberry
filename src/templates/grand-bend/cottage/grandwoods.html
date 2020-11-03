@@ -1,0 +1,531 @@
+---
+title: Luxe Grand Bend Cottage - Walk to Private Sun Beach | Cottage Rental in Grand Bend, Ontario 
+theme: dark
+canonical: https://luxeberry.ca/grand-bend/cottage/grandwoods
+description: A gorgeous five-bedroom rental cottage in Grand Bend's private community of Southcott Pines comes complete with open-plan living, sleek contemporary décor, breezy patio and all the amenities you'll need for the perfect beach vacation.  
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="gallery">
+  <div class="gallery__cover">
+    <div class="gallery__main">
+      <picture class="gallery__picture">
+        <source srcset="/img/cover-grandwoods_6-main_mob.jpg, /img/cover-grandwoods_6-main_mob@2x.jpg 2x" media="(max-width: 480px)">
+        <img class="gallery__image" src="/img/cover-grandwoods_7-main.jpg" srcset="/img/cover-grandwoods_7-main@2x.jpg 2x" alt="Grand Woods">
+      </picture>
+      <div class="gallery__item">
+        <picture class="gallery__pic">
+          <source data-srcset="/img/gallery-grandwoods_1_mob.jpg, /img/gallery-grandwoods_1_mob@2x.jpg 2x" media="(max-width: 480px)">
+          <img class="gallery__img lazyload" data-src="/img/gallery-grandwoods_1.jpg" data-srcset="/img/gallery-grandwoods_1@2x.jpg 2x" alt="Kitchen, living and dining room">
+        </picture>
+        <div class="gallery__desc">Kitchen, living and dining room (Photographed by JessNaturally)</div>
+      </div>
+    </div>
+    <div class="box gallery__slider">
+      <div class="swiper-container slider slider_property">
+        <div class="swiper-wrapper">
+          {% set gallery = [{
+          "img"  : "gallery-grandwoods_2",
+          "alt"  : "Living room",
+          "desc" : "Living room (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_3",
+          "alt"  : "Pool table in lower level games room",
+          "desc" : "Pool table in lower level games room (Photographed by JessNaturally) "
+          },{
+          "img"  : "gallery-grandwoods_4",
+          "alt"  : "Kitchen",
+          "desc" : "Kitchen (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_5",
+          "alt"  : "Kitchen, living and dining room",
+          "desc" : "Kitchen, living and dining room (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_6",
+          "alt"  : "Kitchen island",
+          "desc" : "Kitchen island (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_7",
+          "alt"  : "Reading nook",
+          "desc" : "Reading nook (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_8",
+          "alt"  : "Hallway mirror",
+          "desc" : "Hallway mirror (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_9",
+          "alt"  : "Lower level games room",
+          "desc" : "Lower level games room (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_10",
+          "alt"  : "Pool table",
+          "desc" : "Pool table (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_11",
+          "alt"  : "Common space in lower level games room",
+          "desc" : "Common space in lower level games room (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_12",
+          "alt"  : "Arcade table in lower level games room",
+          "desc" : "Arcade table in lower level games room (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_13",
+          "alt"  : "Covered patio",
+          "desc" : "Covered patio (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_14",
+          "alt"  : "Covered patio looking out to large wooden deck",
+          "desc" : "Covered patio looking out to large wooden deck (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_15",
+          "alt"  : "Large wooden decks",
+          "desc" : "Large wooden deck (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_16",
+          "alt"  : "Full Bathroom #1",
+          "desc" : "Full Bathroom #1 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_17",
+          "alt"  : "Full Bathroom #2",
+          "desc" : "Full Bathroom #2 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_18",
+          "alt"  : "Bedroom #1",
+          "desc" : "Bedroom #1 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_19",
+          "alt"  : "Bedroom #1",
+          "desc" : "Bedroom #1 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_20",
+          "alt"  : "Bedroom #2",
+          "desc" : "Bedroom #2 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_21",
+          "alt"  : "Bedroom #3",
+          "desc" : "Bedroom #3 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_22",
+          "alt"  : "Bedroom #3",
+          "desc" : "Bedroom #3 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_23",
+          "alt"  : "Bedroom #4",
+          "desc" : "Bedroom #4 (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_24",
+          "alt"  : "Master bedroom",
+          "desc" : "Master bedroom (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_25",
+          "alt"  : "Master bedroom with full ensuite",
+          "desc" : "Master bedroom with full ensuite (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_26",
+          "alt"  : "Front Balcony",
+          "desc" : "Front Balcony (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_27",
+          "alt"  : "Front elevation",
+          "desc" : "Front elevation (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_28",
+          "alt"  : "Streets of Southcott Pines",
+          "desc" : "Scenic walk through Southcott Pines (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_29",
+          "alt"  : "Wooden steps to lake",
+          "desc" : "Private access to the lake (Photographed by JessNaturally)"
+          },{
+          "img"  : "gallery-grandwoods_30",
+          "alt"  : "Lake access",
+          "desc" : "Private access to the lake (Photographed by JessNaturally)"
+          }] %}
+
+          {% for item in gallery %}
+          {{ gallerySlide(item.img, item.alt, item.desc) }}
+          {% endfor %}
+        </div>
+        <div class="swiper-button-prev"><span class="swiper-arrow-big"></span></div>
+        <div class="swiper-button-next"><span class="swiper-arrow-big"></span></div>
+      </div>
+    </div>
+  </div>
+  <!-- popup gallery (start) -->
+  <div class="gallery__popup">
+    <div class="gallery__box">
+      <div class="gallery__top">
+        <a href="#" class="gallery__close"></a>
+      </div>
+      <div class="gallery__container box box_big">
+        <div class="gallery__side">
+          <div class="gallery__caption">
+            <h2 class="gallery__title">Grand Woods</h2>
+            <img class="gallery__logo lazyload" data-src="/img/logo-grandwoods.png" data-srcset="/img/logo-grandwoods@2x.png 2x" alt="Grand Woods">
+          </div>
+        </div>
+        <div class="gallery__base"></div>
+      </div>
+    </div>
+  </div>
+  <!-- popup gallery (end) -->
+</div>
+
+<div class="box">
+  <div class="property">
+    <div class="property__base">
+      <div class="property__top">
+        <h1 class="property__title">Luxe Grand Bend Cottage - Walk to Beach</h1>
+        <div class="property__desc">
+          <a href="/grand-bend/cottage/rentals" target="_blank" class="property__location">Grand Bend, Ontario</a>
+        </div>
+      </div>
+      <ul class="property__info">
+        <li class="property__info-item">Entire cottage</li>
+        <li class="property__info-item">12 guests</li>
+        <li class="property__info-item">5 bedrooms</li>
+        <li class="property__info-item">8 beds</li>
+        <li class="property__info-item">3 baths</li>
+      </ul>
+      <div class="property__column">
+        <img class="property__logo" src="/img/logo-grandwoods.png" srcset="/img/logo-grandwoods@2x.png 2x" alt="Grand Woods">
+      </div>
+    </div>
+    <div class="property__side">
+      <div class="booking">
+        <div class="booking__btn">
+          <a href="https://www.airbnb.ca/h/grandwoods" target="_blank" class="btn btn_light">Check availability</a>
+        </div>
+        <div class="booking__box">
+          <div class="booking__text">Starting at</div>
+          <div class="booking__price"><strong>${% include 'partials/prices-per-night/_grandwoods.html' %}</strong> per night</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="expand expand_active expand_small">
+    <div class="expand__wrapper">
+      <div class="expand__container content">
+        <p>
+          This tranquil Grand Bend cottage resides within one of the world’s last Oak Savannas, and just a five-minute drive from Canada’s best beach destination. For a more secluded yet equally picturesque stretch of golden yellow sand, Sun Beach is a scenic 15-minute hike away. 
+        </p>
+        <p>
+          Other attractions such as a winery, a provincial park, a golf course, a Motorplex, and an antique market are all within a 10-minute drive.
+        </p>
+        <h3>Property</h3>
+        <p>
+          Neutral color tones and natural materials afford this spacious five-bedroom property a sleek contemporary aesthetic, while rows of floor to ceiling windows immerse you with the woodlands outside.
+        </p>
+        <p>
+          The upper floor open-plan living and dining space serves as the centrepiece of the property, complete with polished slate floors, chic furnishings, and a slanted ceiling design. Plush grey-woven couches surround a sizeable Smart TV preloaded with cable, Netflix, and Amazon Prime. Attached is a fully equipped kitchen with modern appliances and streaky marble tabletops–everything you need to cook up a tasty meal.
+        </p>
+        <p>
+          The area opens out onto an expansive deck and a covered patio, where cozy outdoor furniture invites you to linger outside. A BBQ is on hand for when you fancy an alfresco feast under the stars. 
+        </p>
+        <p>
+          Downstairs, a well-equipped games room makes for a top spot to mingle, complete with a pool table, bar fridge, and retro arcade machine. 
+        </p>
+        <p>
+          The master bedroom boasts a cushy king-sized bed and a luxe spa-style en-suite bathroom. You’ll find three other doube rooms with queen-sized beds as well as a twin bunk room set up for children and adults alike. Two twin-sized rollaway beds provide sleeping space for additional guests. 
+        </p>
+        <h3>Guest Access</h3>
+        <p>
+          Guests get exclusive access to the entire home.
+        </p>
+        <p>
+          Early check-in and check-out between October and April can be provided on request if no other guests are due to arrive/depart within 24 hours. 
+        </p>
+        <p>
+          Access to bicycles, outdoor furniture, and BBQ is only provided during the warmer months between end-April to mid-October. 
+        </p>
+        <h3>Cleaning and Sanitizing</h3>
+        <p>
+          Providing safe, clean and sanitized environments for our guests and team members is always a priority for us. We remain committed to upholding the highest standards of cleanliness and want you to feel at ease when you visit our property.
+        </p>
+        <p>
+          We're disinfecting all surfaces and paying special attention to sanitizing items frequently touched, such as doorknobs, handles, light switches, doorbells, remote controllers, faucets, etc.
+        </p>
+        <h3>Other things to note</h3>
+        <p>
+          Personal hygiene products and fresh linen are provided.
+        </p>
+        <p>
+          Laundry facilities are available.
+        </p>
+      </div>
+      <a href="#" class="expand__box">
+        <div class="expand__link">
+          <span class="expand__text expand__text_show">Read more about the property</span>
+          <span class="expand__text expand__text_hide">Hide</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <div class="hr hr_mobile"></div>
+  <section class="expand expand_big mb">
+    <h2 class="title title_mb">Amenities</h2>
+    <div class="expand__wrapper">
+      <div class="expand__container services">
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-parking"></use>
+            </svg>
+            <h3 class="services__title">Parking</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Free parking available on site for 4 vehicles</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-wifi"></use>
+            </svg>
+            <h3 class="services__title">Internet</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Free WiFi is available</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-oven"></use>
+            </svg>
+            <h3 class="services__title">Kitchen & Dining</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">10-12 seat dining table</li>
+            <li class="list__item">2 seat kitchen island</li>
+            <li class="list__item">8 seat patio table (April to October)</li>
+            <li class="list__item">Stovetop and oven</li>
+            <li class="list__item">Microwave</li>
+            <li class="list__item">Cookware & bakeware</li>
+            <li class="list__item">Utensils & cutting knives</li>
+            <li class="list__item">Trivets & coasters</li>
+            <li class="list__item">Refrigerator</li>
+            <li class="list__item">Coffee machine</li>
+            <li class="list__item">Cleaning products</li>
+            <li class="list__item">Paper towel (2 rolls)</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="21" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-dog"></use>
+            </svg>
+            <h3 class="services__title">Pets</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">No pets</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="21" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+            </svg>
+            <h3 class="services__title">Bedrooms</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">5 bedrooms</li>
+            <li class="list__item">1 king bed</li>
+            <li class="list__item">3 queen beds</li>
+            <li class="list__item">2 twin beds</li>
+            <li class="list__item">2 roll out beds</li>
+            <li class="list__item">Non-feather pillows</li>
+            <li class="list__item">Non-feather duvets</li>
+            <li class="list__item">Flat sheets</li>
+            <li class="list__item">USB phone charging port</li>
+            <li class="list__item">Fan</li>
+            <li class="list__item">Alarm clock</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bathtub"></use>
+            </svg>
+            <h3 class="services__title">Bathrooms</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">3 bathrooms</li>
+            <li class="list__item">Bathtub (1)</li>
+            <li class="list__item">Shower (3)</li>
+            <li class="list__item">Towels</li>
+            <li class="list__item">Hairdryer</li>
+            <li class="list__item">Toilet paper (2 rolls per bathroom)</li>
+            <li class="list__item">Liquid body soap (3 travel size)</li>
+            <li class="list__item">Facial soap (3 travel size)</li>
+            <li class="list__item">Shampoo (3 travel size)</li>
+            <li class="list__item">Conditioner (3 travel size)</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="21">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bell"></use>
+            </svg>
+            <h3 class="services__title">Check-in/out</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Smart lock self check-in</li>
+            <li class="list__item">Backup key</li>
+            <li class="list__item">Ring doorbell</li>
+            <li class="list__item">Exterior cameras</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-padlock"></use>
+            </svg>
+            <h3 class="services__title">Security & Safety</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Ring video doorbell</li>
+            <li class="list__item">Exterior cameras</li>
+            <li class="list__item">Fire extinguisher</li>
+            <li class="list__item">Carbon monoxide detectors</li>
+            <li class="list__item">Smoke detectors</li>
+            <li class="list__item">First aid kit</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-barbecue"></use>
+            </svg>
+            <h3 class="services__title">Outdoor</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">BBQ grill</li>
+            <li class="list__item">Back patio with dining table</li>
+            <li class="list__item">Back deck with seating</li>
+            <li class="list__item">Front balcony with seating</li>
+            <li class="list__item">Access to private beach</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-television"></use>
+            </svg>
+            <h3 class="services__title">Entertainment</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Netflix</li>
+            <li class="list__item">Amazon Prime</li>
+            <li class="list__item">Pool table</li>
+            <li class="list__item">Arcade table</li>
+            <li class="list__item">PS3</li>
+            <li class="list__item">Card games</li>
+            <li class="list__item">Board games</li>
+            <li class="list__item">Books</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-coffee-cup"></use>
+            </svg>
+            <h3 class="services__title">Food & Drink</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">10 K-cup coffee pods</li>
+            <li class="list__item">10 black tea (individually sealed)</li>
+            <li class="list__item">10 green tea (individually sealed)</li>
+            <li class="list__item">10 white sugar packets</li>
+            <li class="list__item">10 brown sugar packets</li>
+            <li class="list__item">10 sweetener packets</li>
+            <li class="list__item">Filtered tap water or Brita filter</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-gear"></use>
+            </svg>
+            <h3 class="services__title">Miscellaneous</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Air conditioning</li>
+            <li class="list__item">Portable fans</li>
+            <li class="list__item">Heating</li>
+            <li class="list__item">Smoke-free property</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="expand__box">
+        <div class="expand__link">
+          <span class="expand__text expand__text_show">Show all amenties</span>
+          <span class="expand__text expand__text_hide">Hide</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <h2 class="title title_mb">Location</h2>
+  <!-- map (start) -->
+  <div class="map">
+    <div class="map__box">
+      <a href="#" class="map__pic zoom-link">
+        <picture class="zoom__pic">
+          <source data-srcset="/img/map-grandwoods_mob.jpg, /img/map-grandwoods_mob@2x.jpg 2x" media="(max-width: 480px)">
+          <img class="map__img lazyload" data-src="/img/map-grandwoods.jpg" data-srcset="/img/map-grandwoods@2x.jpg 2x" alt="Grand Bend map">
+        </picture>
+      </a>
+      <div class="map__content">
+        <iframe class="map__frame map__frame_location" src=""
+                data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23223.288445742113!2d-81.77263150816597!3d43.316121330325295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x882f395b02c2aa1b%3A0x3a41ff15140aa36!2sGrand%20Bend%2C%20Lambton%20Shores%2C%20ON%2C%20Canada!3m2!1d43.3130397!2d-81.75622419999999!4m5!1s0x882f3a2d1f242ce7%3A0xb211912e6555f3b4!2sSouthcott%20Pines%2C%20Lambton%20Shores%2C%20ON%2C%20Canada!3m2!1d43.304345!2d-81.770211!5e0!3m2!1sen!2sby!4v1585495892618!5m2!1sen!2sca"
+                width="1238" height="696" frameborder="0" allowfullscreen="">
+        </iframe>
+        <a href="#" class="map__close">
+          <svg class="map__close-icon" width="26" height="26">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="map__view">
+      <a href="#" target="_blank" class="map__link zoom-link">View map</a>
+      <a href="#" class="map__link map__btn map__btn_location">View location on Google Maps</a>
+    </div>
+    <div class="map__bottom">
+      <div class="booking">
+        <div class="booking__btn">
+          <a href="https://www.airbnb.ca/h/grandwoods" target="_blank" class="btn btn_light">Check availability</a>
+        </div>
+        <div class="booking__box">
+          <div class="booking__text">Starting at</div>
+          <div class="booking__price"><strong>${% include 'partials/prices-per-night/_grandwoods.html' %}</strong> per night</div>
+        </div>
+      </div>
+    </div>
+    <div class="zoom">
+      <a href="#" class="zoom__close"></a>
+      <div class="zoom__box">
+        <div class="zoom__wrap">
+          <picture class="zoom__pic">
+            <source data-srcset="/img/map-grandwoods_zoom_mob.jpg" media="(max-width: 576px)">
+            <img class="zoom__img lazyload" data-src="/img/map-grandwoods_zoom.jpg" data-srcset="/img/map-grandwoods_zoom@2x.jpg 2x" alt="Grand Bend map">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map (end) -->
+  <div class="hr hr_desktop"></div>
+
+  {% include "partials/_top-things-grandbend.html" %}
+
+  <div class="hr hr_default"></div>
+
+  {% include "partials/_explore-other-vacation-rentals-grand-bend.html" %}
+
+</div>
+
+{% endblock %}

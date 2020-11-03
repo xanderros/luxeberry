@@ -1,0 +1,215 @@
+---
+title: Top Things to Do in Grand Bend | Local Attractions | Luxeberry Group
+theme: dark
+canonical: https://luxeberry.ca/grand-bend/attractions/things-to-do
+description: Stretching along the shores of Lake Huron, Ontario's Grand Bend has garnered a well-earned rep as the best beach resort in Canada. Exceptional water quality, epic sunsets, quaint markets to a posh winery and picture-perfect hikes, make Grand Bend a premium lakeside beach resort that's second to none. 
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_height_small">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-attractions-grand-bend-main_mob.jpg, /img/cover-attractions-grand-bend-main_mob@2x.jpg 2x" media="(max-width: 480px)">
+    <img class="cover__img" src="/img/cover-attractions-grand-bend-main-2.jpg" srcset="/img/cover-attractions-grand-bend-main-2@2x.jpg 2x" alt="Grand Bend">
+  </picture>
+</div>
+
+<div class="box">
+
+  <section class="mb">
+    <h1 class="title">Exploring Grand Bend and Lampton Shores</h1>
+    <div class="content">
+      <p>
+        Stretching along the shores of Lake Huron, Ontario's Grand Bend has garnered a well-earned rep as the best beach resort in Canada. Scores of sun-worshippers descend on its lively Main Beach each summer, where epic sunsets paint vivid hues of red and gold. Factor in exceptional water quality and a dedicated lifeguard service, and you've got a premium lakeside beach resort that's second to none. 
+      </p>
+      <p>
+        But there's more to Grand Bend than frolicking in the pristine water and working on your tan—this cute little tourist town is awash with exciting things to do. From quaint markets to posh wineries and picture-perfect hikes, here are the top things to see and do in Grand Bend.
+      </p>
+    </div>
+  </section>
+
+  <section class="mb-big">
+    <div class="caption filter filter_check">
+      <h2 class="title">Top things to do in Grand Bend</h2>
+      <div class="caption__side">
+        <div class="filter__container">
+          <div class="filter__result">
+            <span class="filter__result-value">8</span> results
+          </div>
+          <div class="filter__box">
+            <a href="#" class="filter__btn">Filter</a>
+            <div class="filter__dropdown">
+              <a href="#" class="filter__close">
+                <svg class="filter__close-icon" width="15" height="15">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+              <div class="filter__caption">Filter results</div>
+              <div class="filter__group">
+                <div class="filter__title">Type</div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-nature" value="NATURE & PARKS">
+                    <label class="checkbox__label" for="checkbox-nature">Nature & Parks</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-outdoor" value="OUTDOOR ACTIVITIES">
+                    <label class="checkbox__label" for="checkbox-outdoor">Outdoor activities</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-sightseeing" value="SIGHTSEEING">
+                    <label class="checkbox__label" for="checkbox-sightseeing">Sightseeing</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-nightlife" value="NIGHTLIFE">
+                    <label class="checkbox__label" for="checkbox-nightlife">Nightlife</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-food" value="FOOD & DRINK">
+                    <label class="checkbox__label" for="checkbox-food">Food & Drink</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-shopping" value="SHOPPING">
+                    <label class="checkbox__label" for="checkbox-shopping">Shopping</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-winter" value="WINTER ACTIVITIES">
+                    <label class="checkbox__label" for="checkbox-winter">Winter activities</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__group">
+                <div class="filter__title">Good for</div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-kids" value="KIDS">
+                    <label class="checkbox__label" for="checkbox-kids">Kids</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-families" value="FAMILIES">
+                    <label class="checkbox__label" for="checkbox-families">Families</label>
+                  </div>
+                </div>
+                <div class="filter__row">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="checkbox-couples" value="COUPLES">
+                    <label class="checkbox__label" for="checkbox-couples">Couples</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__bottom">
+                <a href="#" class="filter__submit btn btn_light btn_size_filter">Apply filter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activities js-filter js-filter_check">
+      {% set activities = [{
+      "title"      : "Pinery Provincial Park",
+      "type"       : "NATURE & PARKS, OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES, KIDS",
+      "img"        : "activity-grand-bend-sm-pinery-park",
+      "desc"       : "Straddling the shores of Lake Huron, the 21 km2 Pinery Provincial Park perfectly showcases the raw natural beauty of Southwest Ontario. Come to camp in lush oak savannah or hike the trails that wind through delicate ocean dunes. ",
+      "link"       : "/grand-bend/attractions/pinery-provincial-park",
+      "mapLocation": "9526 Lakeshore Rd, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55280.69363780567!2d-81.84726114377534!3d43.26538710075927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d15bcd7ae768ee9!2sPinery%20Provincial%20Park!5e0!3m2!1sen!2sca!4v1586356592303!5m2!1sen!2sca"
+      },{
+      "title"      : "Grand Bend Beaches",
+      "type"       : "BEACH, OUTDOOR ACTIVITIES",
+      "good"       : "KIDS, FAMILIES, COUPLES",
+      "img"        : "activity-grand-bend-sm-beach",
+      "desc"       : "Grand Bend's unbridled beauty and sweltering summer temps make it the top beach destination in Canada, with most of the action occurring on its festive Main Beach. If you'd rather escape the tourist throngs, several secluded sandy stretches reside nearby. ",
+      "link"       : "/grand-bend/attractions/main-beach",
+      "mapLocation": "End of Main Street West, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.012950621665!2d-81.76821619646086!3d43.31398832563307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f3a39aff7cee5%3A0x1f8bb2021f895bd6!2sMain%20St%20W%2C%20Lambton%20Shores%2C%20ON%20N0M%201T0!5e0!3m2!1sen!2sca!4v1586356503831!5m2!1sen!2sca"
+      },{
+      "title"      : "Main Street",
+      "type"       : "NIGHTLIFE, FOOD & DRINK, SHOPPING, OUTDOOR ACTIVITIES",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-grand-bend-sm-main-st",
+      "desc"       : "Ram packed with restaurants, cafes, ice cream parlours, and bars; Main Street is the epicentre of this epic beach town. Scores of holidaymakers flock to the strip to eat, drink, and be merry, creating a festive vibe during the busier months. ",
+      "link"       : "/grand-bend/attractions/main-street",
+      "mapLocation": "Main Street West, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.021527481202!2d-81.76251918451321!3d43.31380877913441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f3a39aff7cee5%3A0x1f8bb2021f895bd6!2sMain%20St%20W%2C%20Lambton%20Shores%2C%20ON%20N0M%201T0!5e0!3m2!1sen!2sca!4v1586356463229!5m2!1sen!2sca"
+      },{
+      "title"      : "Dark Horse Estate Winery",
+      "type"       : "FOOD & DRINK, SHOPPING",
+      "good"       : "COUPLES",
+      "img"        : "activity-grand-bend-sm-dark-horse",
+      "desc"       : "Occupying a quaint country setting on the outskirts of town, Dark Horse Estate produces fine local wine amid picturesque rural surrounds. Come for a winery tour and tasting session to discover how delicious Canadian wine can be.",
+      "link"       : "https://darkhorseestatewinery.com/",
+      "mapLocation": "70665 B Line, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19527.957934519916!2d-81.75028761232163!3d43.31743467100151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f3af19f60d0df%3A0x8126e704c16f9c4d!2sDark%20Horse%20Estate%20Winery!5e0!3m2!1sen!2sca!4v1586355927049!5m2!1sen!2sca"
+      },{
+      "title"      : "Huron Country Playhouse",
+      "type"       : "SIGHTSEEING, FOOD & DRINK",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-grand-bend-sm-huron-country-playhouse",
+      "desc"       : "Grand Bend boasts a burgeoning arts scene, and the Huron Country Playhouse serves as the pillar of it all. This humble theatre complex sits outside town in a spectacular setting and impresses guests for the quality of its regular performances. ",
+      "link"       : "https://www.draytonentertainment.com/",
+      "mapLocation": "70689 B Line, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19529.047587911802!2d-81.75183391016442!3d43.31404396815386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f3a47ee9f8f05%3A0x3b95045890606c42!2sHuron%20Country%20Playhouse!5e0!3m2!1sen!2sca!4v1586355983727!5m2!1sen!2sca"
+      },{
+      "title"      : "Oakwood Resort Golf Course",
+      "type"       : "OUTDOOR ACTIVITIES, FOOD & DRINK",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-grand-bend-sm-golf-course",
+      "desc"       : "Fancy practising your stroke on your upcoming trip to Grand Bend? Then the Oak Wood Resort Golf Course is the place to be. Immaculately manicured grounds and lush leafy greens define this highly acclaimed 18-hole course. ",
+      "link"       : "https://oakwoodresort.ca/golf-resort-grand-bend-oakwood-resort/",
+      "mapLocation": "70671 Bluewater Hwy, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16420.97185613138!2d-81.75275767344213!3d43.3175011600777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f3b232afc6de3%3A0x5b8f48dda2959b2e!2sOakwood%20Resort!5e0!3m2!1sen!2sca!4v1586356031671!5m2!1sen!2sca"
+      },{
+      "title"      : "Pinery Antique Market",
+      "type"       : "SHOPPING, SIGHTSEEING",
+      "good"       : "FAMILIES, COUPLES",
+      "img"        : "activity-grand-bend-sm-antique-market",
+      "desc"       : "Scratch your vintage retail itch with a visit to the Pinery Antique Market, where local vendors flog eccentric retro oddities at rock bottom rates. Fresh farmland produce and handmade artisanal wares make this eclectic Sunday market a must. ",
+      "link"       : "https://pinerymarket.com/",
+      "mapLocation": "10163 Lakeshore Rd, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27629.62613381514!2d-81.79318790433099!3d43.288992916472544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f395a06025b27%3A0xb692d1ecb45c8ad6!2sPinery%20Market!5e0!3m2!1sen!2sca!4v1586356100267!5m2!1sen!2sca"
+      },{
+      "title"      : "Grand Bend Motorplex",
+      "type"       : "OUTDOOR ACTIVITIES, SIGHTSEEING",
+      "good"       : "KIDS, FAMILIES",
+      "img"        : "activity-grand-bend-sm-motorplex",
+      "desc"       : "Revheads will adore this multi-purpose motorsports facility, where everything from championship drag races to kid-friendly go-kart tournaments takes place. The complex boasts a ¼ mile drag strip, a high banked paved oval, a multi-circuit race track, and other high-octane delights.",
+      "link"       : "https://www.grandbendmotorplex.ca/",
+      "mapLocation": "70292 Grand Bend Line, Grand Bend, ON N0M 1T0",
+      "mapLink"    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46461.41382655534!2d-81.7510071135291!3d43.29670652501529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f3b1bdeb69edd%3A0xa5ee55c866f5bcaa!2sGrand%20Bend%20Motorplex!5e0!3m2!1sen!2sca!4v1586356149433!5m2!1sen!2sca"
+      }] %}
+
+      {% for item in activities %}
+      {{ activity(item.title, item.type, item.good, item.img, item.desc, item.link, item.target, item.mapLocation, item.mapLink) }}
+      {% endfor %}
+      <p class="activities__not-found js-filter__reset">
+      <span class="activities__not-found-text content">
+        No results were found for the selected options.
+      </span>
+        <a href="#" class="link">Reset filter and show all Top things to do in Tobermory</a>
+      </p>
+    </div>
+  </section>
+
+  {% include "partials/_places-stay-grandbend.html" %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,496 @@
+---
+title: Luxe Waterfront Tobermory Cottage | Cottage Rental in Tobermory, Ontario
+theme: dark
+canonical: https://luxeberry.ca/tobermory/cottage/tobermoryshores
+description: A gorgeous watefront Tobermory cottage nestled within Ontario’s secluded Bruce Peninsula, this four-bedroom villa boasts contemporary décor and beautiful Georgian Bay views. 
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="gallery">
+  <div class="gallery__cover">
+    <div class="gallery__main">
+      <picture class="gallery__picture">
+        <source srcset="/img/cover-tobermory_2-main_mob.jpg, /img/cover-tobermory_2-main_mob@2x.jpg 2x" media="(max-width: 480px)">
+        <img class="gallery__image" src="/img/cover-tobermory_5-main.jpg" srcset="/img/cover-tobermory_5-main@2x.jpg 2x" alt="Tobermory Shores">
+      </picture>
+      <div class="gallery__item">
+        <picture class="gallery__pic">
+          <source data-srcset="/img/gallery-tobermoryshores-main_1_mob.jpg, /img/gallery-tobermoryshores-main_1_mob@2x.jpg 2x" media="(max-width: 480px)">
+          <img class="gallery__img lazyload" data-src="/img/gallery-tobermoryshores-main_1.jpg" data-srcset="/img/gallery-tobermoryshores-main_1@2x.jpg 2x" alt="Tobermory Shores">
+        </picture>
+        <div class="gallery__desc">Gorgeous chef's kitchen with views of the lake</div>
+      </div>
+    </div>
+    <div class="box gallery__slider">
+      <div class="swiper-container slider slider_property">
+        <div class="swiper-wrapper">
+          {% set gallery = [{
+          "img"  : "gallery-tobermoryshores-main_2",
+          "alt"  : "Waterfront deck",
+          "desc" : "Gorgeous chef's kitchen with views of the lake "
+          },{
+          "img"  : "gallery-tobermoryshores-main_23",
+          "alt"  : "Kitchen appliances",
+          "desc" : "Kitchen appliances"
+          },{
+          "img"  : "gallery-tobermoryshores-main_3",
+          "alt"  : "Living room",
+          "desc" : "Living room with views of Georgian Bay"
+          },{
+          "img"  : "gallery-tobermoryshores-main_4",
+          "alt"  : "Kitchen and dining area",
+          "desc" : "Living room with views of Georgian Bay"
+          },{
+          "img"  : "gallery-tobermoryshores-main_5",
+          "alt"  : "Main deck with waterfront views",
+          "desc" : "Main deck overlooking Georgian Bay with views of Flowerpot Island"
+          },{
+          "img"  : "gallery-tobermoryshores-main_6",
+          "alt"  : "Master bedroom",
+          "desc" : "Master bedroom located on the main level with walk-in closet and separate lounge area"
+          },{
+          "img"  : "gallery-tobermoryshores-main_7",
+          "alt"  : "Master bedroom",
+          "desc" : "Views of Georgian Bay from the master bedroom."
+          },{
+          "img"  : "gallery-tobermoryshores-main_8",
+          "alt"  : "Master bedroom ensuite",
+          "desc" : "Master bedroom ensuite"
+          },{
+          "img"  : "gallery-tobermoryshores-main_9",
+          "alt"  : "Lakeview Bedroom",
+          "desc" : "Second-floor bedroom #1 with views of Georgian Bay and Flowerpot Island"
+          },{
+          "img"  : "gallery-tobermoryshores-main_10",
+          "alt"  : "Bedroom",
+          "desc" : "Second-floor bedroom #2 with views of Georgian Bay and Flowerpot Island"
+          },{
+          "img"  : "gallery-tobermoryshores-main_11",
+          "alt"  : "Main level bedroom",
+          "desc" : "Main-floor bedroom"
+          },{
+          "img"  : "gallery-tobermoryshores-main_12",
+          "alt"  : "Main floor bathroom",
+          "desc" : "Main-floor bathroom"
+          },{
+          "img"  : "gallery-tobermoryshores-main_13",
+          "alt"  : "Bathroom",
+          "desc" : "Second-floor bathroom"
+          },{
+          "img"  : "gallery-tobermoryshores-main_14",
+          "alt"  : "Games room",
+          "desc" : "Games room with pool table, air hockey table and arcade table with 400 classic games"
+          },{
+          "img"  : "gallery-tobermoryshores-main_15",
+          "alt"  : "Laundry",
+          "desc" : "Laundry"
+          },{
+          "img"  : "gallery-tobermoryshores-main_16",
+          "alt"  : "TobermoryShores",
+          "desc" : "Tobermory Shores"
+          },{
+          "img"  : "gallery-tobermoryshores-main_17",
+          "alt"  : "View from lower shoreline deck",
+          "desc" : "View from lower shoreline deck"
+          },{
+          "img"  : "gallery-tobermoryshores-main_18",
+          "alt"  : "Lower shoreline deck",
+          "desc" : "Lower shoreline deck"
+          },{
+          "img"  : "gallery-tobermoryshores-main_19",
+          "alt"  : "Views from the upper bedroom",
+          "desc" : "Views from the upper bedroom"
+          },{
+          "img"  : "gallery-tobermoryshores-main_20",
+          "alt"  : "Sun setting on Georgian Bay",
+          "desc" : "Sun setting on Georgian Bay"
+          },{
+          "img"  : "gallery-tobermoryshores-main_21",
+          "alt"  : "View from the upper deck",
+          "desc" : "View from the upper deck"
+          },{
+          "img"  : "gallery-tobermoryshores-main_22",
+          "alt"  : "Log bench",
+          "desc" : "One of three log benches located in the front of the property."
+          }] %}
+
+          {% for item in gallery %}
+          {{ gallerySlide(item.img, item.alt, item.desc) }}
+          {% endfor %}
+        </div>
+        <div class="swiper-button-prev"><span class="swiper-arrow-big"></span></div>
+        <div class="swiper-button-next"><span class="swiper-arrow-big"></span></div>
+      </div>
+    </div>
+  </div>
+  <!-- popup gallery (start) -->
+  <div class="gallery__popup">
+    <div class="gallery__box">
+      <div class="gallery__top">
+        <a href="#" class="gallery__close"></a>
+      </div>
+      <div class="gallery__container box box_big">
+        <div class="gallery__side">
+          <div class="gallery__caption">
+            <h2 class="gallery__title">TobermoryShores</h2>
+            <img class="gallery__logo lazyload" data-src="/img/logo-tobermory.png" data-srcset="/img/logo-tobermory@2x.png 2x" alt="Tobermory Shores">
+          </div>
+        </div>
+        <div class="gallery__base"></div>
+      </div>
+    </div>
+  </div>
+  <!-- popup gallery (end) -->
+</div>
+
+<div class="box">
+  <div class="property">
+    <div class="property__base">
+      <div class="property__top">
+        <h1 class="property__title">Luxe Waterfront Tobermory Cottage</h1>
+        <div class="property__desc">
+          <a href="/tobermory/cottage/rentals" target="_blank" class="property__location">Tobermory, Ontario</a>
+        </div>
+      </div>
+      <ul class="property__info">
+        <li class="property__info-item">Entire cottage</li>
+        <li class="property__info-item">9 guests</li>
+        <li class="property__info-item">4 bedrooms</li>
+        <li class="property__info-item">5 beds</li>
+        <li class="property__info-item">3 baths</li>
+      </ul>
+      <div class="property__column">
+        <img class="property__logo" src="/img/tobermory.png" srcset="/img/tobermory@2x.png 2x" alt="Tobermory Shores">
+      </div>
+    </div>
+    <div class="property__side">
+      <div class="booking">
+        <div class="booking__btn">
+          <a href="https://airbnb.com/h/tobermoryshores" target="_blank"" class="btn btn_light">Check availability</a>
+        </div>
+        <div class="booking__box">
+          <div class="booking__text">Starting at</div>
+          <div class="booking__price"><strong>${% include 'partials/prices-per-night/_tobermoryshores.html' %}</strong> per night</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="expand expand_active expand_small expand_active">
+    <div class="expand__wrapper">
+      <div class="expand__container content">
+        <p>
+          A contemporary waterfront cottage with sweeping bay views and cutting edge design. This South Ontario property sits in a secluded spot on the tip of the Bruce Peninsula, just a 3-minute drive to the quaint harbour village of Tobermory. From the wooden-wrap around deck, you’ll enjoy uninterrupted views across the glistening Georgian Bay.
+        </p>
+        <p>
+          The forested hiking trails of the Bruce Peninsula National Park are within easy reach. The region also boasts some of the world’s best freshwater dive sites, with near-perfect visibility and almost two dozen wrecks.
+        </p>
+        <p>
+          A sleek open-plan design, chic whitewashed tones, and modern minimalist décor define this 21st-century abode, where walnut wood surfaces add a sophisticated touch. Floor to ceiling windows line most of the four-bedroom home, allowing sunlight to flood in and affording spectacular views of the bay.
+        </p>
+        <p>
+          The master bedroom boasts a cushy king-sized bed, an airy living space, and an ultramodern en-suite bathroom. The other three bedrooms are stylish and comfortable with beautiful bay views.
+        </p>
+        <p>
+          On the main level, you’ll find the roomy open-plan living and dining space complete with a fully equipped kitchen to whip up a delicious meal. A sophisticated walnut wood dining set seats up to 10 guests, and there’s plenty of room for the whole group to stretch out in the adjacent lounge. The entire space enjoys the warmth of a crackling fireplace in the colder months.
+        </p>
+        <p>
+          Downstairs in the garage, you’ll find a well-stocked games room with fun-filled facilities to suit all ages.
+        </p>
+        <p>
+          A large wrap-around wooden balcony makes for the perfect open-air entertainment space, complete with oodles of sleek outdoor furniture and incredible Georgian Bay views. Cook up a storm on the BBQ here to enjoy a memorable alfresco meal.
+        </p>
+        <h3>Guest Access</h3>
+        <p>
+          Guests get unrestricted access to the entire home and Bunkie. The crawlspace and the shed to the side of the house are the only off-limits areas.
+        </p>
+        <p>
+          Early check-in and late check-out may be provided between October and April if no other guests are leaving/arriving within 24 hours.
+        </p>
+        <h3>Cleaning and Sanitizing</h3>
+        <p>
+          Providing safe, clean and sanitized environments for our guests and team members is always a priority for us. We remain committed to upholding the highest standards of cleanliness and want you to feel at ease when you visit our property.
+        </p>
+        <p>
+          We're disinfecting all surfaces and paying special attention to sanitizing items frequently touched, such as doorknobs, handles, light switches, doorbells, remote controllers, faucets, etc.
+        </p>
+        <h3>Other things to note</h3>
+        <p>
+          Opening the windows and turning on the fans will circulate the lake breeze and keep the house cool, often negating the need for A/C altogether.
+        </p>
+        <p>
+          Guests can access the lakeshore directly from the property, although the area is rugged and can be hazardous without due care.
+        </p>
+      </div>
+      <a href="#" class="expand__box">
+        <div class="expand__link">
+          <span class="expand__text expand__text_show">Read more about the property</span>
+          <span class="expand__text expand__text_hide">Hide</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <div class="hr hr_mobile"></div>
+  <section class="expand expand_active expand_big mb">
+    <h2 class="title title_mb">Amenities</h2>
+    <div class="expand__wrapper">
+      <div class="expand__container services">
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-parking"></use>
+            </svg>
+            <h3 class="services__title">Parking</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Free parking available on site for 4 vehicles</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-wifi"></use>
+            </svg>
+            <h3 class="services__title">Internet</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Free WiFi is available</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-oven"></use>
+            </svg>
+            <h3 class="services__title">Kitchen & Dining</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">10 seat dining table</li>
+            <li class="list__item">3 seat kitchen island</li>
+            <li class="list__item">6 seat patio table (April to October)</li>
+            <li class="list__item">Stovetop and oven</li>
+            <li class="list__item">Microwave</li>
+            <li class="list__item">Cookware & bakeware</li>
+            <li class="list__item">Utensils & cutting knives</li>
+            <li class="list__item">Trivets & coasters</li>
+            <li class="list__item">Refrigerator</li>
+            <li class="list__item">K-cup coffee machine</li>
+            <li class="list__item">Cleaning products</li>
+            <li class="list__item">Paper towel (2 rolls)</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="21" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-dog"></use>
+            </svg>
+            <h3 class="services__title">Pets</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">No pets</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="21" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+            </svg>
+            <h3 class="services__title">Bedrooms</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">4 bedrooms</li>
+            <li class="list__item">1 king bed</li>
+            <li class="list__item">3 queen beds</li>
+            <li class="list__item">1 sofa bed</li>
+            <li class="list__item">Non-feather pillows</li>
+            <li class="list__item">Non-feather duvets</li>
+            <li class="list__item">Flat sheets</li>
+            <li class="list__item">USB phone charging port</li>
+            <li class="list__item">Fan</li>
+            <li class="list__item">Alarm clock</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bathtub"></use>
+            </svg>
+            <h3 class="services__title">Bathrooms</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">3 bathrooms</li>
+            <li class="list__item">Bathtub (1)</li>
+            <li class="list__item">Shower (3)</li>
+            <li class="list__item">Towels</li>
+            <li class="list__item">Hairdryer</li>
+            <li class="list__item">Toilet paper (2 rolls per bathroom)</li>
+            <li class="list__item">Liquid body soap (3 travel size)</li>
+            <li class="list__item">Facial soap (3 travel size)</li>
+            <li class="list__item">Shampoo (3 travel size)</li>
+            <li class="list__item">Conditioner (3 travel size)</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="21">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bell"></use>
+            </svg>
+            <h3 class="services__title">Check-in/out</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Smart lock self check-in</li>
+            <li class="list__item">Backup key</li>
+            <li class="list__item">Ring doorbell</li>
+            <li class="list__item">Exterior cameras</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-padlock"></use>
+            </svg>
+            <h3 class="services__title">Security & Safety</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Ring video doorbell</li>
+            <li class="list__item">Exterior cameras</li>
+            <li class="list__item">Fire extinguisher</li>
+            <li class="list__item">Carbon monoxide detectors</li>
+            <li class="list__item">Smoke detectors</li>
+            <li class="list__item">First aid kit</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-barbecue"></use>
+            </svg>
+            <h3 class="services__title">Outdoor</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">BBQ grill</li>
+            <li class="list__item">Back patio with dining table</li>
+            <li class="list__item">Back deck with seating</li>
+            <li class="list__item">Shoreline deck with seating</li>
+            <li class="list__item">Waterfront property</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-television"></use>
+            </svg>
+            <h3 class="services__title">Entertainment</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Netflix</li>
+            <li class="list__item">Amazon Prime</li>
+            <li class="list__item">Pool table</li>
+            <li class="list__item">Arcade table</li>
+            <li class="list__item">Card games</li>
+            <li class="list__item">Board games</li>
+            <li class="list__item">Books</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="22" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-coffee-cup"></use>
+            </svg>
+            <h3 class="services__title">Food & Drink</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">10 K-cup coffee pods</li>
+            <li class="list__item">10 black tea (individually sealed)</li>
+            <li class="list__item">10 green tea (individually sealed)</li>
+            <li class="list__item">10 white sugar packets</li>
+            <li class="list__item">10 brown sugar packets</li>
+            <li class="list__item">10 sweetener packets</li>
+            <li class="list__item">Filtered tap water or Brita filter</li>
+          </ul>
+        </div>
+        <div class="services__item">
+          <div class="services__top">
+            <svg class="services__icon" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-gear"></use>
+            </svg>
+            <h3 class="services__title">Miscellaneous</h3>
+          </div>
+          <ul class="list">
+            <li class="list__item">Floor and portable fans</li>
+            <li class="list__item">Heating</li>
+            <li class="list__item">Smoke-free property</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="expand__box">
+        <div class="expand__link">
+          <span class="expand__text expand__text_show">Show all amenties</span>
+          <span class="expand__text expand__text_hide">Hide</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <h2 class="title title_mb">Location</h2>
+  <!-- map (start) -->
+  <div class="map">
+    <div class="map__box">
+      <a href="#" class="map__pic zoom-link">
+        <picture class="zoom__pic">
+          <source data-srcset="/img/map-tobermory_mob.jpg, /img/map-tobermory_mob@2x.jpg 2x" media="(max-width: 480px)">
+          <img class="map__img lazyload" data-src="/img/map-tobermory.jpg" data-srcset="/img/map-tobermory@2x.jpg 2x" alt="Tobermory map">
+        </picture>
+      </a>
+      <div class="map__content">
+        <iframe class="map__frame map__frame_location" src=""
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22473.807744928486!2d-81.67538991221323!3d45.24322316231979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2d0ba9fb4f9461%3A0x3b2e70b0e46a3526!2sTobermory%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sca!4v1581697629457!5m2!1sen!2sca"
+                width="1238" height="696" frameborder="0" allowfullscreen="">
+        </iframe>
+        <a href="#" class="map__close">
+          <svg class="map__close-icon" width="26" height="26">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="map__view">
+      <a href="#" target="_blank" class="map__link zoom-link">View map</a>
+      <a href="#" class="map__link map__btn map__btn_location">View location on Google Maps</a>
+    </div>
+    <div class="map__bottom">
+      <div class="booking">
+        <div class="booking__btn">
+          <a href="https://airbnb.com/h/tobermoryshores" target="_blank" class="btn btn_light">Check availability</a>
+        </div>
+        <div class="booking__box">
+          <div class="booking__text">Starting at</div>
+          <div class="booking__price"><strong>${% include 'partials/prices-per-night/_tobermoryshores.html' %}</strong> per night</div>
+        </div>
+      </div>
+    </div>
+    <div class="zoom">
+      <a href="#" class="zoom__close"></a>
+      <div class="zoom__box">
+        <div class="zoom__wrap">
+          <picture class="zoom__pic">
+            <source data-srcset="/img/map-tobermory_zoom_mob.jpg" media="(max-width: 576px)">
+            <img class="zoom__img lazyload" data-src="/img/map-tobermory_zoom.jpg" data-srcset="/img/map-tobermory_zoom@2x.jpg 2x" alt="Tobermory map">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map (end) -->
+  <div class="hr hr_desktop"></div>
+
+  {% include "partials/_top-things-tobermory.html" %}
+
+  <div class="hr hr_default"></div>
+
+  {% include "partials/_explore-other-vacation-rentals-tobermory.html" %}
+
+</div>
+
+{% endblock %}

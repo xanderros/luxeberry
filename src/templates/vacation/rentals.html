@@ -1,0 +1,554 @@
+---
+title: Top Cottage and Vacation Home Rentals in Canada | Luxeberry Group
+theme: dark
+canonical: https://luxeberry.ca/vacation/rentals
+description: Browse our carefully curated collection of chic cottage rentals and vacation homes. Every single cottage selected must offer outstanding design, quality and comfort for discerning travellers and pass a rigorous, 100+ point inspection.
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_height_small cover_bg_left">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-vacation_10-main_mob.jpg, /img/cover-vacation_10-main_mob@2x.jpg 2x"
+            media="(max-width: 480px)">
+    <img class="cover__img" src="/img/cover-vacation_10-main.jpg" srcset="/img/cover-vacation_10-main@2x.jpg 2x"
+         alt="Tobermory">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading cover__heading_medium">Stay in stunning rental cottages and vacation homes.</h1>
+      <div class="cover__desc">
+        <p class="cover__desc-main_alt">
+          Experience peace of mind, outstanding design, quality and comfort with each stay.
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="box">
+
+  <section class="mb">
+    <div class="caption filter filter_sort">
+      <h2 class="title">Top Cottage Rentals and Vacation Homes</h2>
+      <div class="caption__side">
+        <div class="filter__container">
+          <div class="filter__box">
+            <a href="#" class="filter__btn">SORT BY: <span class="filter__text">PRICE: HIGH TO LOW</span></a>
+            <div class="filter__dropdown">
+              <div class="filter__row">
+                <div class="radio">
+                  <input class="radio__input" type="radio" id="price-hl" name="radio-sort" checked>
+                  <label class="radio__label" for="price-hl">Price: High to Low</label>
+                </div>
+              </div>
+              <div class="filter__row">
+                <div class="radio">
+                  <input class="radio__input" type="radio" id="price-lh" name="radio-sort">
+                  <label class="radio__label" for="price-lh">Price: Low to High</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offers js-filter js-filter_sort">
+      <div class="offers__item js-filter__item"
+           data-price="{% include 'partials/prices-per-night/_tobermoryshores.html' %}" data-distance="7">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental1 = [{
+                "img" : "gallery-tobermoryshores-main_3",
+                "title": "Living Room"
+                },{
+                "img" : "gallery-tobermoryshores-main_24",
+                "title": "Living Room"
+                },{
+                "img" : "gallery-tobermoryshores-main_7",
+                "title": "Living Room"
+                },{
+                "img" : "gallery-tobermoryshores-main_5",
+                "title": "Living Room"
+                },{
+                "img" : "gallery-tobermoryshores-main_9",
+                "title": "Living Room"
+                }] %}
+
+                {% for item in rental1 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22468.492704587894!2d-81.6835051614978!3d45.25665745528846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDE1JzI0LjAiTiA4McKwMzknNTcuNiJX!5e0!3m2!1sen!2sca!4v1585496442526!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d8166.710269144487!2d-81.65709628903214!3d45.259677911979054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d45.264739!2d-81.64010789999999!4m5!1s0x4d2d0ba9fb4f9461%3A0x3b2e70b0e46a3526!2sTobermory%2C%20ON%2C%20Canada!3m2!1d45.2533625!2d-81.6645411!5e0!3m2!1sen!2sca!4v1581698311582!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Tobermory Shores</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Tobermory, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">5 min to Tobermory centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              Tobermory Shores offers breathtaking views of one of Canada’s most beautiful and scenic vacation
+              destinations. Enjoy world famous sunsets and scubdiving.
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">9</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">4</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">5</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include
+                'partials/prices-per-night/_tobermoryshores.html' %}</strong> per night
+              </div>
+            </div>
+            <a href="/tobermory/cottage/tobermoryshores" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+      <div class="offers__item js-filter__item" data-price="{% include 'partials/prices-per-night/_somerset.html' %}"
+           data-distance="5">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental2 = [{
+                "img" : "gallery-somerset-main_1",
+                "title": "Somerset Living Room"
+                },{
+                "img" : "gallery-somerset-main_2",
+                "title": "Somerset Master Bedroom"
+                },{
+                "img" : "gallery-somerset-main_3",
+                "title": "Somerset Kitchen"
+                },{
+                "img" : "gallery-somerset-main_4",
+                "title": "Somerset Bedroom"
+                },{
+                "img" : "gallery-somerset-main_5",
+                "title": "Somerset Cottage"
+                }] %}
+
+                {% for item in rental2 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11601.352364025533!2d-79.9815735!3d43.3699543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25ec3e732080ff9c!2sWest%20Avenue%20Cider%20House!5e0!3m2!1sen!2sca!4v1597937538050!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d92898.20204471232!2d-79.99837781041894!3d43.312818882739116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x882c986c27de778f%3A0x2b6aee56d8df0e21!2sHamilton%2C%20ON!3m2!1d43.2557206!2d-79.8711024!4m5!1s0x882b7dbe1db62053%3A0x25ec3e732080ff9c!2sWest%20Avenue%20Cider%20House%2C%2084%20Concession%20Rd%208%20E%2C%20Freelton%2C%20ON%20L0R%201K0!3m2!1d43.369954299999996!2d-79.9815735!5e0!3m2!1sen!2sca!4v1597937756515!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Somerset Cottage</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Hamilton, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">20 min to Hamilton centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              Heritage apples and quaint countryside surround the cottage, resulting in a relaxed rural vibe that's
+              perfect for your next weekend escape.
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">6</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">2</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include 'partials/prices-per-night/_somerset.html'
+                %}</strong> per night
+              </div>
+            </div>
+            <a href="/hamilton/home/somersetcottage" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+      <div class="offers__item js-filter__item" data-price="{% include 'partials/prices-per-night/_grandwoods.html' %}"
+           data-distance="5">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental3 = [{
+                "img" : "gallery-grandwoods_1",
+                "title": "Grand Woods Open Concept Living Space"
+                },{
+                "img" : "gallery-grandwoods_2",
+                "title": "Grand Woods Family Room"
+                },{
+                "img" : "gallery-grandwoods_3",
+                "title": "Grand Woods Games Room"
+                },{
+                "img" : "gallery-grandwoods_4",
+                "title": "Grand Woods Kitchen"
+                },{
+                "img" : "gallery-grandwoods_5",
+                "title": "Grand Woods Kitchen Island"
+                }] %}
+
+                {% for item in rental3 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23224.59866201864!2d-81.77501646154288!3d43.312692882399666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE4JzQ1LjciTiA4McKwNDUnMjcuMCJX!5e0!3m2!1sen!2sca!4v1585496191158!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23223.288445742113!2d-81.77263150816597!3d43.316121330325295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x882f395b02c2aa1b%3A0x3a41ff15140aa36!2sGrand%20Bend%2C%20Lambton%20Shores%2C%20ON%2C%20Canada!3m2!1d43.3130397!2d-81.75622419999999!4m5!1s0x882f3a2d1f242ce7%3A0xb211912e6555f3b4!2sSouthcott%20Pines%2C%20Lambton%20Shores%2C%20ON%2C%20Canada!3m2!1d43.304345!2d-81.770211!5e0!3m2!1sen!2sca!4v1585495892618!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Grand Woods</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Grand Bend, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">4 min to Grand Bend centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              A gorgeous five-bedroom property in an oak forest near Grand Bend complete with open-plan living, sleek
+              contemporary décor, and a breezy patio.
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">12</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">5</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">8</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include 'partials/prices-per-night/_grandwoods.html'
+                %}</strong> per night
+              </div>
+            </div>
+            <a href="/grand-bend/cottage/grandwoods" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+      <div class="offers__item js-filter__item" data-price="{% include 'partials/prices-per-night/_elderberry.html' %}"
+           data-distance="6">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental4 = [{
+                "img" : "gallery-elderberry-main_2",
+                "title": "Kitchen"
+                },{
+                "img" : "gallery-elderberry-main_4",
+                "title": "Dining Room"
+                },{
+                "img" : "gallery-elderberry-main_5",
+                "title": "Living Room"
+                },{
+                "img" : "gallery-elderberry-main_11",
+                "title": "Games Room"
+                },{
+                "img" : "gallery-elderberry-main_6",
+                "title": "Living Room TV"
+                }] %}
+
+                {% for item in rental4 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11596.566347706952!2d-79.99041363164808!3d43.39496997710772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDIzJzQxLjkiTiA3OcKwNTgnNTQuMCJX!5e0!3m2!1sen!2sca!4v1585496676526!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d185273.35355739566!2d-79.85062716805183!3d43.48363761512192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!3m2!1d43.653226!2d-79.3831843!4m5!1s0x882b7c66f21dd597%3A0xed6da70e1c02d20!2sCarlisle%2C%20Hamilton%2C%20ON%2C%20Canada!3m2!1d43.3941952!2d-79.9804642!5e0!3m2!1sen!2sca!4v1585496908637!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Elderberry Manor</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Carlise, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">52 min to Toronto centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              A newly renovated luxury home surrounded by century-old housing, modern subdivisions and estates nestled
+              along Bronte Creek. Enjoy the chef's kitchen, games room, workout room, and a large backyard with a
+              gorgeous saltwater pool.
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">8</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">4</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">4</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                               xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include 'partials/prices-per-night/_elderberry.html'
+                %}</strong> per night
+              </div>
+            </div>
+            <a href="/hamilton/home/elderberrymanor" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "partials/_list-vacations.html" %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% macro unit(side,img,title,desc,pic) %}
+<section class="unit unit_{{ side }}{% if pic=='big' %} unit_pic_big{% endif %}{% if pic=='middle' %} unit_pic_middle{% endif %}">
+  <div class="unit__box">
+    <div class="unit__content">
+      <h3 class="unit__title">{{ title }}</h3>
+      {% if desc %}
+      <div class="unit__desc">
+        {{ desc | safe }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <picture class="unit__pic">
+    <source data-srcset="/img/{{ img }}_mob.jpg, /img/{{ img }}_mob.jpg 2x" media="(max-width: 767px)">
+    <img class="unit__img lazyload" data-src="/img/{{ img }}.jpg" data-srcset="/img/{{ img }}@2x.jpg 2x" alt="{{ title }}">
+  </picture>
+</section>
+{% endmacro %}

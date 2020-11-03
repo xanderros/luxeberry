@@ -1,0 +1,186 @@
+---
+title: Grand Bend Cottage and Vacation Home Rentals | Luxeberry Group
+theme: dark
+canonical: https://luxeberry.ca/grand-bend/cottage/rentals
+description: A list of handpicked Grand Bend cottage rentals and vacation homes chosen for their outstanding design, quality and comfort. Only the best cottages in the Grand Bend area are selected. 
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="cover cover_height_small cover_bg_left">
+  <picture class="cover__pic">
+    <source srcset="/img/cover-vacation-grand-bend_mob.jpg, /img/cover-vacation-grand-bend_mob@2x.jpg 2x" media="(max-width: 480px)">
+    <img class="cover__img" src="/img/cover-vacation-grand-bend-2.jpg" srcset="/img/cover-vacation-grand-bend-2@2x.jpg 2x" alt="Tobermory">
+  </picture>
+  <div class="cover__content box">
+    <section class="cover__side">
+      <h1 class="cover__heading cover__heading_medium">Exclusive Grand Bend cottage rentals and vacation homes.</h1>
+      <div class="cover__desc">
+        <p class="cover__desc-main_alt">
+          Discover why Grand Bend is one of the top beach destinations in Canada.
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="box">
+
+  <section class="mb">
+    <div class="caption filter filter_sort">
+      <h2 class="title">Top Rental Cottages in Grand Bend</h2>
+      <div class="caption__side">
+        <div class="filter__container">
+          <div class="filter__box">
+            <a href="#" class="filter__btn">SORT BY: <span class="filter__text">PRICE: HIGH TO LOW</span></a>
+            <div class="filter__dropdown">
+              <div class="filter__row">
+                <div class="radio">
+                  <input class="radio__input" type="radio" id="price-hl" name="radio-sort" checked>
+                  <label class="radio__label" for="price-hl">Price: High to Low</label>
+                </div>
+              </div>
+              <div class="filter__row">
+                <div class="radio">
+                  <input class="radio__input" type="radio" id="price-lh" name="radio-sort">
+                  <label class="radio__label" for="price-lh">Price: Low to High</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offers js-filter js-filter_sort">
+      <div class="offers__item js-filter__item" data-price="{% include 'partials/prices-per-night/_grandwoods.html' %}" data-distance="5">
+        <div class="offer map">
+          <div class="offer__images">
+            <div class="slider slider_offer swiper-container">
+              <div class="swiper-wrapper">
+                {% set rental1 = [{
+                "img"  : "gallery-grandwoods_1",
+                "title": "GrandWoods"
+                },{
+                "img"  : "gallery-grandwoods_2",
+                "title": "GrandWoods"
+                },{
+                "img"  : "gallery-grandwoods_3",
+                "title": "GrandWoods"
+                },{
+                "img"  : "gallery-grandwoods_4",
+                "title": "GrandWoods"
+                },{
+                "img"  : "gallery-grandwoods_5",
+                "title": "GrandWoods"
+                }] %}
+
+                {% for item in rental1 %}
+                {{ rentalSlide(item.img, item.title) }}
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+              <div class="swiper-button-next"><svg class="swiper-arrow" width="9" height="14"><use xlink:href="/img/sprite.svg#icon-arrow"></use></svg></div>
+            </div>
+            <div class="offer__map map__content">
+              <iframe class="map__frame map__frame_location" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23224.59866201864!2d-81.77501646154288!3d43.312692882399666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE4JzQ1LjciTiA4McKwNDUnMjcuMCJX!5e0!3m2!1sen!2sca!4v1585496191158!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <iframe class="map__frame map__frame_distance" src=""
+                      data-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23223.288445742113!2d-81.77263150816597!3d43.316121330325295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x882f395b02c2aa1b%3A0x3a41ff15140aa36!2sGrand%20Bend%2C%20Lambton%20Shores%2C%20ON%2C%20Canada!3m2!1d43.3130397!2d-81.75622419999999!4m5!1s0x882f3a2d1f242ce7%3A0xb211912e6555f3b4!2sSouthcott%20Pines%2C%20Lambton%20Shores%2C%20ON%2C%20Canada!3m2!1d43.304345!2d-81.770211!5e0!3m2!1sen!2sca!4v1585495892618!5m2!1sen!2sca"
+                      width="1238" height="373" frameborder="0" allowfullscreen="">
+              </iframe>
+              <a href="#" class="map__close">
+                <svg class="map__close-icon" width="26" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-x-mark"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="offer__side">
+            <h3 class="offer__title">Grand Woods</h3>
+            <div class="offer__info">
+              <a href="#" class="offer__link map__btn map__btn_location"><span
+                  class="offer__link-text">Grand Bend, ON</span></a>
+              <a href="#" class="offer__link map__btn map__btn_distance">
+                <svg class="offer__icon" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-clock"></use>
+                </svg>
+                <span class="offer__link-text">4 min to Grand Bend centre</span>
+              </a>
+            </div>
+            <div class="offer__desc">
+              A gorgeous five-bedroom property in an oak forest near Grand Bend complete with open-plan living, sleek contemporary décor, and a breezy patio. 
+            </div>
+            <div class="offer__box">
+              <div class="offer__prop">
+                <div class="prop">
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-user"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">12</div>
+                      <div class="prop__text">guests</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-window"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">5</div>
+                      <div class="prop__text">bedrooms</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="28" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bed"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">8</div>
+                      <div class="prop__text">beds</div>
+                    </div>
+                  </div>
+                  <div class="prop__cell">
+                    <div class="prop__item">
+                      <div class="prop__icon-wrap">
+                        <svg class="prop__icon" width="25" height="25">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-bathtub"></use>
+                        </svg>
+                      </div>
+                      <div class="prop__count">3</div>
+                      <div class="prop__text">bathrooms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__price">Starting at <strong>${% include 'partials/prices-per-night/_grandwoods.html' %}</strong> per night</div>
+            </div>
+            <a href="/grand-bend/cottage/grandwoods" target="_blank" class="offer__href"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "partials/_list-vacations.html" %}
+
+  <div class="hr hr_mobile"></div>
+
+  {% include "partials/_top-things-grandbend.html" %}
+
+  <div class="hr hr_mobile"></div>
+
+</div>
+
+{% endblock %}
